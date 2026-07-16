@@ -1,0 +1,34 @@
+name: Proponer un Reto Nuevo
+description: ¿Tienes una idea de código usando Nerve que estaría genial para que otros aprendan?
+title: "Propuesta de Reto: [NOMBRE DE TU IDEA]"
+labels: ["propuesta-de-reto"]
+body:
+  - type: markdown
+    attributes:
+      value: "¡Qué genial que quieras proponer un reto nuevo! Cuéntanos más sobre tu idea."
+  - type: textarea
+    id: idea
+    attributes:
+      label: "¿De qué trata el reto?"
+      description: "Explica en uno o dos párrafos qué tendrían que programar los usuarios."
+      placeholder: "Consiste en hacer un programa que..."
+    validations:
+      required: true
+  - type: textarea
+    id: aprendizaje
+    attributes:
+      label: "¿Qué conceptos técnicos se aprenden con esto?"
+      description: "¿Bases de datos? ¿Consumo de APIs? ¿Hilos concurrentes?"
+      placeholder: "- Manejo de JSON\n- Peticiones HTTP..."
+    validations:
+      required: true
+  - type: dropdown
+    id: dificultad
+    attributes:
+      label: "¿Qué dificultad crees que tiene?"
+      options:
+        - Nivel 1 - Principiante
+        - Nivel 2 - Intermedio
+        - Nivel 3 - Avanzado
+    validations:
+      required: true

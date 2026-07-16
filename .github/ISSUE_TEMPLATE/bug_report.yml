@@ -1,0 +1,32 @@
+name: Reportar un Bug
+description: ¿Encontraste un error en los retos o en la documentación? Avísanos aquí.
+title: "Bug: [RESUMEN DEL ERROR]"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "¡Gracias por ayudarnos a mejorar nerve-community! Llena esta plantilla para que podamos entender el problema."
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "Descripción del problema"
+      description: "¿Qué pasó y qué esperabas que pasara?"
+      placeholder: "Cuando intento correr el reto 02 en Windows, me lanza un error..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduccion
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Paso a paso de cómo llegaste a este error."
+      placeholder: "1. Abrí la carpeta del reto...\n2. Ejecuté el comando..."
+    validations:
+      required: true
+  - type: textarea
+    id: entorno
+    attributes:
+      label: "Entorno / Sistema Operativo"
+      description: "¿Usas Windows, Mac, Linux? ¿Qué versión de Python tienes?"
+      placeholder: "Windows 11, Python 3.11, alenia-nerve 0.1.0"
+    validations:
+      required: false

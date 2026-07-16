@@ -1,0 +1,18 @@
+# Entornos virtuales y variables de entorno
+env/
+venv/
+.env
+
+# Compilados de Python
+__pycache__/
+*.py[cod]
+*.so
+
+# IDEs y configuración local
+.vscode/
+.idea/
+.DS_Store
+
+# Archivos de notas locales 
+nota.tex
+crear-issues-nerve-community.sh

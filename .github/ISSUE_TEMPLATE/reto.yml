@@ -1,0 +1,47 @@
+name: Solucionar un Reto
+description: Sube tu solución a uno de los retos de código disponibles.
+title: "Reto: [NOMBRE DEL RETO]"
+labels: ["en-progreso"]
+body:
+  - type: markdown
+    attributes:
+      value: "¡Gracias por animarte a resolver este reto! Por favor llena esta plantilla para que podamos revisar tu propuesta fácilmente."
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: "¿De qué nivel es el reto que resolviste?"
+      options:
+        - Nivel 1 - Principiante
+        - Nivel 2 - Intermedio
+        - Nivel 3 - Avanzado
+    validations:
+      required: true
+  - type: input
+    id: nombre_reto
+    attributes:
+      label: "Nombre exacto del reto"
+      placeholder: "Ejemplo: 01-chat-terminal"
+    validations:
+      required: true
+  - type: textarea
+    id: como_probar
+    attributes:
+      label: "¿Cómo podemos probar tu código?"
+      description: "Explícanos brevemente qué comandos correr para probar tu solución."
+      placeholder: "1. Ejecutar `python servidor.py` en una terminal...\n2. Ejecutar `python cliente.py` en otra..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Lista de verificación"
+      options:
+        - label: "Probé mi código localmente y funciona."
+          required: true
+        - label: "Agregué mi código en la carpeta correspondiente al reto."
+          required: true
+        - label: "Comenté mi código para que otras personas puedan aprender leyéndolo."
+          required: false
+  - type: markdown
+    attributes:
+      value: "## 🎓 ¿Sabías que...?\nLas soluciones más pulidas y completas pueden ser invitadas a integrarse directamente al repositorio de producción [zenith-nerve-tools](https://github.com/Kaia-Alenia/zenith-nerve-tools), con crédito total para ti como autor/a. ¡Esfuérzate, tu código puede terminar siendo una herramienta real que otros usen!"
