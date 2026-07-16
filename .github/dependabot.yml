@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/" # Busca archivos de requerimientos en todo el repositorio desde la raíz
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/Mexico_City"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencias"
+      - "bot"
+    commit-message:
+      prefix: "📦 [KAIA] Actualiza"

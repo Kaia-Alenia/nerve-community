@@ -1,0 +1,39 @@
+name: "Linter Compasivo (Auto-Format)"
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - '**.py'
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          # Esto es clave para que podamos pushear a la rama del Fork si nos dieron permiso
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Instalar formateador (Black)
+        run: pip install black
+        
+      - name: Ejecutar Black en todo el código Python
+        run: black .
+        
+      - name: Hacer commit automático si hubo cambios
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "✨ [KAIA] Formateo mágico de código (Linter Compasivo)"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          status_options: '--untracked-files=no'
+          # Añadimos un pequeño comentario de apoyo para el desarrollador si se modificaron archivos

@@ -48,6 +48,15 @@ Si esta es la primera vez que escuchas sobre Git, GitHub o un "Pull Request", es
    git config --global user.name "Tu Nombre Aquí"
    git config --global user.email "tu_correo@ejemplo.com"
    ```
+3. **Autentícate con GitHub:**
+   GitHub ya no permite usar contraseñas normales en la terminal. La forma más amigable es instalar la [GitHub CLI (gh)](https://cli.github.com/).
+   Una vez que la instales, abre tu terminal y escribe:
+   ```bash
+   gh auth login
+   ```
+   Sigue las instrucciones: elige `GitHub.com`, luego `HTTPS`, luego `Yes` para autenticar con tus credenciales, y finalmente `Login with a web browser`. Se abrirá tu navegador para dar permiso. ¡Y listo!
+
+   *(💡 Alternativa manual: Si no quieres instalar `gh`, debes ir a tu perfil de GitHub -> **Settings > Developer Settings > Personal access tokens > Tokens (classic)**, generar un nuevo token marcando la casilla "repo", y usar ese código larguísimo como si fuera tu contraseña cuando la terminal te lo pida al hacer `git push`).*
 
 ---
 

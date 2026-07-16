@@ -14,8 +14,14 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 ## 🔌 ¿Por qué existe Nerve?
 [alenia-nerve](https://github.com/Kaia-Alenia/alenia-nerve) es un sistema de comunicación entre procesos (IPC) local, multiplataforma y offline-first, que te permite conectar diferentes scripts (incluso en diferentes lenguajes) de forma súper sencilla usando sockets locales (Unix Sockets en Linux/macOS, TCP en Windows).
 
-## 🏆 Tabla de retos disponibles
+## 🏆 Retos Disponibles
 
+### 🧊 Reto Rompehielo
+| Reto | Nivel | Tecnología principal | Estado | Enlace al Issue |
+|---|---|---|---|---|
+| **00-rompe-el-hielo** | 🟢 Principiante | GitHub | `disponible` | [#12](https://github.com/Kaia-Alenia/nerve-community/issues/12) |
+
+### 🔌 Retos Core (Nerve)
 | Reto | Nivel | Tecnología principal | Estado | Enlace al Issue |
 |---|---|---|---|---|
 | **01-chat-terminal** | 🟢 Principiante | Python (Sockets, Nerve) | `disponible` | [#1](https://github.com/Kaia-Alenia/nerve-community/issues/1) |
@@ -28,6 +34,23 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 | **08-puente-http** | 🔴 Avanzado | Python (FastAPI) | `disponible` | [#8](https://github.com/Kaia-Alenia/nerve-community/issues/8) |
 | **09-probador-de-carga** | 🔴 Avanzado | Python (Concurrencia) | `disponible` | [#9](https://github.com/Kaia-Alenia/nerve-community/issues/9) |
 | **10-cliente-nuevo-lenguaje** | 🔴 Avanzado | Dart / Kotlin / Go / etc. | `disponible` | [#10](https://github.com/Kaia-Alenia/nerve-community/issues/10) |
+
+### 🐍 Retos de Python General
+| Reto | Nivel | Tecnología principal | Estado | Enlace al Issue |
+|---|---|---|---|---|
+| **01-lista-tareas** | 🟢 Principiante | Python | `disponible` | [#13](https://github.com/Kaia-Alenia/nerve-community/issues/13) |
+| **02-web-scraper** | 🟢 Principiante | Python | `disponible` | [#14](https://github.com/Kaia-Alenia/nerve-community/issues/14) |
+| **03-juego-adivinar** | 🟢 Principiante | Python | `disponible` | [#15](https://github.com/Kaia-Alenia/nerve-community/issues/15) |
+| **04-analizador-gastos** | 🟢 Principiante | Python | `disponible` | [#16](https://github.com/Kaia-Alenia/nerve-community/issues/16) |
+| **05-generador-passwords** | 🟢 Principiante | Python | `disponible` | [#17](https://github.com/Kaia-Alenia/nerve-community/issues/17) |
+| **06-conversor-divisas** | 🟢 Principiante | Python | `disponible` | [#18](https://github.com/Kaia-Alenia/nerve-community/issues/18) |
+| **07-calculadora-propinas** | 🟢 Principiante | Python | `disponible` | [#19](https://github.com/Kaia-Alenia/nerve-community/issues/19) |
+| **08-organizador-archivos** | 🟢 Principiante | Python | `disponible` | [#20](https://github.com/Kaia-Alenia/nerve-community/issues/20) |
+| **09-recordatorio-tareas** | 🟡 Intermedio | Python | `disponible` | [#21](https://github.com/Kaia-Alenia/nerve-community/issues/21) |
+| **10-analizador-texto** | 🟢 Principiante | Python | `disponible` | [#22](https://github.com/Kaia-Alenia/nerve-community/issues/22) |
+
+> 📝 **¿Eres mantenedor/a o quieres ver el texto original de los retos?**
+> Consulta las plantillas de los issues en [RETOS_ISSUES.md](RETOS_ISSUES.md) (para los retos Rompehielo y Core) y [PYTHON_GENERAL_ISSUES.md](PYTHON_GENERAL_ISSUES.md) (para los retos de Python General).
 
 ## 🤔 ¿Nunca has hecho un Pull Request?
 ¡No te preocupes! Tenemos una guía paso a paso, desde cero, explicando cada comando que necesitas escribir. Léela aquí: **[CÓMO HACER TU PRIMER PR](COMO-HACER-TU-PRIMER-PR.md)**.
@@ -48,7 +71,7 @@ La contribución más destacada del trimestre recibe **4 meses gratis de Google 
 Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financiar los premios de la comunidad (suscripciones, reconocimientos, y eventualmente merch). Cada trimestre publicaremos un resumen transparente de cómo se usó lo recaudado en nuestro archivo [TRANSPARENCIA.md](TRANSPARENCIA.md).
 
 ## 💬 Únete a la comunidad
-*(Placeholder: Enlace a Discord / Telegram de la comunidad de Kaia/Alenia)*
+(https://discord.gg/xFptGAr7t)
 
 ## ✨ Contribuidores
 ¡Gracias a todas las personas que hacen esto posible! Cada contribución cuenta.
