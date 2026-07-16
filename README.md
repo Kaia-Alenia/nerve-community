@@ -42,7 +42,7 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 Las mejores herramientas construidas aquí no se quedan solo como ejercicio. Si tu contribución está bien hecha, es útil y estable, puede ser invitada a integrarse directamente al repositorio de producción **zenith-nerve-tools**, con crédito completo para ti como autor/a. Varios de los retos de Nivel 2 y 3 están pensados justo para eso: son herramientas reales que pueden pasar de "ejercicio" a "software que otros usan".
 
 ## 🏆 Premio Trimestral
-La contribución más destacada del trimestre recibe **4 meses gratis de Google AI Pro** (acceso a Gemini Advanced, Antigravity con cuotas mucho más altas, agentes Claude, y beneficios del ecosistema Google Cloud). *Nota: Se requiere ingresar una tarjeta de crédito para activar la prueba, pero puedes cancelar antes del 4to mes para evitar cargos automáticos. Cupo limitado mientras el link de referido tenga invitaciones disponibles.*
+La contribución más destacada del trimestre recibe **4 meses gratis de Google AI Pro** (acceso a Gemini Advanced, Antigravity con cuotas mucho más altas, agentes Claude, y beneficios del ecosistema Google Cloud).
 
 ## 💜 Financiamiento y Transparencia
 Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financiar los premios de la comunidad (suscripciones, reconocimientos, y eventualmente merch). Cada trimestre publicaremos un resumen transparente de cómo se usó lo recaudado en nuestro archivo [TRANSPARENCIA.md](TRANSPARENCIA.md).
