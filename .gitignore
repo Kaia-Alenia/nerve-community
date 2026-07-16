@@ -16,3 +16,4 @@ __pycache__/
 # Archivos de notas locales 
 nota.tex
 crear-issues-nerve-community.sh
+setup_github.sh
