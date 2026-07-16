@@ -20,4 +20,5 @@ setup_github.sh
 crear-issues-python-general.sh
 discord-bot/data/
 discord-bot/*.db
+discord-bot/
 Cosas tontas que use/
