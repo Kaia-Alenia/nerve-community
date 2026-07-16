@@ -42,6 +42,8 @@ body:
           required: true
         - label: "Comenté mi código para que otras personas puedan aprender leyéndolo."
           required: false
+        - label: "Creo que esta solución está lo suficientemente pulida como para considerarse para 'graduarse' a zenith-nerve-tools."
+          required: false
   - type: markdown
     attributes:
       value: "## 🎓 ¿Sabías que...?\nLas soluciones más pulidas y completas pueden ser invitadas a integrarse directamente al repositorio de producción [zenith-nerve-tools](https://github.com/Kaia-Alenia/zenith-nerve-tools), con crédito total para ti como autor/a. ¡Esfuérzate, tu código puede terminar siendo una herramienta real que otros usen!"

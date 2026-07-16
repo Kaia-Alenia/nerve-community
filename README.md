@@ -18,16 +18,16 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 
 | Reto | Nivel | Tecnología principal | Estado | Enlace al Issue |
 |---|---|---|---|---|
-| **01-chat-terminal** | 🟢 Principiante | Python (Sockets, Nerve) | `disponible` | <!-- Link al Issue --> |
-| **02-reloj-sincronizado** | 🟢 Principiante | Python (rich) | `disponible` | <!-- Link al Issue --> |
-| **03-traductor-de-mensajes** | 🟢 Principiante | Python (Requests/APIs) | `disponible` | <!-- Link al Issue --> |
-| **04-vigilante-de-carpetas** | 🟡 Intermedio | Python (watchdog) | `disponible` | <!-- Link al Issue --> |
-| **05-logger-distribuido** | 🟡 Intermedio | Python (SQLite) | `disponible` | <!-- Link al Issue --> |
-| **06-puente-de-progreso-gif** | 🟡 Intermedio | Python (Pillow) | `disponible` | <!-- Link al Issue --> |
-| **07-bot-discord-nerve** | 🟡 Intermedio | Python (discord.py) | `disponible` | <!-- Link al Issue --> |
-| **08-puente-http** | 🔴 Avanzado | Python (FastAPI) | `disponible` | <!-- Link al Issue --> |
-| **09-probador-de-carga** | 🔴 Avanzado | Python (Concurrencia) | `disponible` | <!-- Link al Issue --> |
-| **10-cliente-nuevo-lenguaje** | 🔴 Avanzado | Dart / Kotlin / Go / etc. | `disponible` | <!-- Link al Issue --> |
+| **01-chat-terminal** | 🟢 Principiante | Python (Sockets, Nerve) | `disponible` | [#1](https://github.com/Kaia-Alenia/nerve-community/issues/1) |
+| **02-reloj-sincronizado** | 🟢 Principiante | Python (rich) | `disponible` | [#2](https://github.com/Kaia-Alenia/nerve-community/issues/2) |
+| **03-traductor-de-mensajes** | 🟢 Principiante | Python (Requests/APIs) | `disponible` | [#3](https://github.com/Kaia-Alenia/nerve-community/issues/3) |
+| **04-vigilante-de-carpetas** | 🟡 Intermedio | Python (watchdog) | `disponible` | [#4](https://github.com/Kaia-Alenia/nerve-community/issues/4) |
+| **05-logger-distribuido** | 🟡 Intermedio | Python (SQLite) | `disponible` | [#5](https://github.com/Kaia-Alenia/nerve-community/issues/5) |
+| **06-puente-de-progreso-gif** | 🟡 Intermedio | Python (Pillow) | `disponible` | [#6](https://github.com/Kaia-Alenia/nerve-community/issues/6) |
+| **07-bot-discord-nerve** | 🟡 Intermedio | Python (discord.py) | `disponible` | [#7](https://github.com/Kaia-Alenia/nerve-community/issues/7) |
+| **08-puente-http** | 🔴 Avanzado | Python (FastAPI) | `disponible` | [#8](https://github.com/Kaia-Alenia/nerve-community/issues/8) |
+| **09-probador-de-carga** | 🔴 Avanzado | Python (Concurrencia) | `disponible` | [#9](https://github.com/Kaia-Alenia/nerve-community/issues/9) |
+| **10-cliente-nuevo-lenguaje** | 🔴 Avanzado | Dart / Kotlin / Go / etc. | `disponible` | [#10](https://github.com/Kaia-Alenia/nerve-community/issues/10) |
 
 ## 🤔 ¿Nunca has hecho un Pull Request?
 ¡No te preocupes! Tenemos una guía paso a paso, desde cero, explicando cada comando que necesitas escribir. Léela aquí: **[CÓMO HACER TU PRIMER PR](COMO-HACER-TU-PRIMER-PR.md)**.
@@ -42,7 +42,7 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 Las mejores herramientas construidas aquí no se quedan solo como ejercicio. Si tu contribución está bien hecha, es útil y estable, puede ser invitada a integrarse directamente al repositorio de producción **zenith-nerve-tools**, con crédito completo para ti como autor/a. Varios de los retos de Nivel 2 y 3 están pensados justo para eso: son herramientas reales que pueden pasar de "ejercicio" a "software que otros usan".
 
 ## 🏆 Premio Trimestral
-La contribución más destacada del trimestre recibe **4 meses gratis de Google AI Pro** (acceso a Gemini Advanced, Antigravity con cuotas mucho más altas, agentes Claude, y beneficios del ecosistema Google Cloud). 
+La contribución más destacada del trimestre recibe **4 meses gratis de Google AI Pro** (acceso a Gemini Advanced, Antigravity con cuotas mucho más altas, agentes Claude, y beneficios del ecosistema Google Cloud). *Nota: Se requiere ingresar una tarjeta de crédito para activar la prueba, pero puedes cancelar antes del 4to mes para evitar cargos automáticos. Cupo limitado mientras el link de referido tenga invitaciones disponibles.*
 
 ## 💜 Financiamiento y Transparencia
 Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financiar los premios de la comunidad (suscripciones, reconocimientos, y eventualmente merch). Cada trimestre publicaremos un resumen transparente de cómo se usó lo recaudado en nuestro archivo [TRANSPARENCIA.md](TRANSPARENCIA.md).
