@@ -1,5 +1,5 @@
 discord.py==2.4.0
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 google-genai
 groq
 PyGithub
