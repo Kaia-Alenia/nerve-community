@@ -13,17 +13,18 @@ class Libro:
         """
         return f"'{self.titulo}' escrito por {self.autor} en {self.año_publicacion}."
 
+
 if __name__ == "__main__":
     # Instanciamos la clase Libro
     mi_libro = Libro("El Principito", "Antoine de Saint-Exupéry", 1943)
-    
+
     # Consultamos atributos normales
     print(f"Título: {mi_libro.titulo}")
-    
+
     # Consultamos la @property. Nota que NO se usan paréntesis como en resumen()
     # Se consulta igual que si fuera un atributo estático.
     print(f"Resumen: {mi_libro.resumen}")
-    
+
     # Si intentamos reasignar una @property sin un @setter definido, Python dará error:
     try:
         mi_libro.resumen = "Otro resumen inventado"

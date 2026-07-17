@@ -3,15 +3,18 @@ import os
 
 ARCHIVO = "tareas.json"
 
+
 def cargar_tareas():
     if os.path.exists(ARCHIVO):
         with open(ARCHIVO, "r", encoding="utf-8") as f:
             return json.load(f)
     return []
 
+
 def guardar_tareas(tareas):
     with open(ARCHIVO, "w", encoding="utf-8") as f:
         json.dump(tareas, f, indent=4)
+
 
 def mostrar_menu():
     print("\n--- Lista de Tareas ---")
@@ -20,6 +23,7 @@ def mostrar_menu():
     print("3. Marcar como completada")
     print("4. Eliminar tarea")
     print("5. Salir")
+
 
 def principal():
     tareas = cargar_tareas()
@@ -74,6 +78,6 @@ def principal():
         else:
             print("\nOpción no válida. Intenta de nuevo.")
 
+
 if __name__ == "__main__":
     principal()
-  

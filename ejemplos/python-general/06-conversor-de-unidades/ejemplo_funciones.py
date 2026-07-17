@@ -5,16 +5,18 @@ def convertir_dolares_a_euros(dolares: float) -> float:
     """
     return dolares * 0.85  # tasa de ejemplo, no representa el valor real de mercado
 
+
 def mostrar_menu():
     print("\n--- MENÚ DE EJEMPLO ---")
     print("1. Convertir Dólares a Euros")
     print("2. Salir")
     return input("Elige una opción: ")
 
+
 def main():
     while True:
         opcion = mostrar_menu()
-        
+
         if opcion == "1":
             try:
                 usd = float(input("Ingresa cantidad en Dólares (USD): "))
@@ -28,6 +30,7 @@ def main():
             break
         else:
             print("Opción no válida.")
+
 
 if __name__ == "__main__":
     main()

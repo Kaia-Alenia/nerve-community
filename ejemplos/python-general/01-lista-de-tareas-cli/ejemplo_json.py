@@ -5,11 +5,7 @@ import os
 ARCHIVO = "datos_ejemplo.json"
 
 # Datos de prueba (un diccionario)
-datos = {
-    "nombre": "Kaia",
-    "version": 1.0,
-    "activo": True
-}
+datos = {"nombre": "Kaia", "version": 1.0, "activo": True}
 
 # 1. Guardar (escribir) datos en un archivo JSON
 with open(ARCHIVO, "w", encoding="utf-8") as f:
