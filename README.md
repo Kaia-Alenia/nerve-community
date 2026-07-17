@@ -63,6 +63,12 @@ Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Po
 > 📝 **¿Eres mantenedor/a o quieres ver el texto original de los retos?**
 > Consulta las plantillas de los issues en [RETOS_ISSUES.md](docs/RETOS_ISSUES.md) (para los retos Rompehielo y Core) y [PYTHON_GENERAL_ISSUES.md](docs/PYTHON_GENERAL_ISSUES.md) (para los retos de Python General).
 
+## 📱 ¿No tienes computadora? ¡Usa tu celular!
+No tener PC no es excusa para no programar. Puedes resolver muchos de nuestros retos usando solo tu celular Android y la app **Termux**.
+Varios de nuestros retos (los de Python General) están marcados con la etiqueta `termux-friendly`, lo que significa que no necesitan compiladores pesados ni bases de datos complejas.
+
+👉 **[Lee la guía paso a paso para empezar desde tu celular aquí](docs/EMPEZAR-CON-SOLO-TU-CELULAR.md)**.
+
 ##  ¿Nunca has hecho un Pull Request?
 ¡No te preocupes! Tenemos una guía paso a paso, desde cero, explicando cada comando que necesitas escribir. Léela aquí: **[CÓMO HACER TU PRIMER PR](COMO-HACER-TU-PRIMER-PR.md)**.
 
