@@ -1,4 +1,4 @@
-# 🗺️ Ruta de Aprendizaje: De Cero a Contribuidor/a
+#  Ruta de Aprendizaje: De Cero a Contribuidor/a
 
 > **Nota importante:** Esta es una guía paso a paso para ayudarte a estructurar tu aprendizaje semana a semana. No es obligatorio hacerlo a esta velocidad, avanza a tu propio ritmo. ¡Lo importante es no rendirse!
 
@@ -11,7 +11,7 @@ Si apenas estás aprendiendo a programar o quieres repasar los fundamentos de Py
 - **Tu misión:** Elige los retos que más te llamen la atención. Aprenderás desde manejo de archivos y bucles, hasta cómo hacer scrapers simples. Para participar, solo comenta "¡Yo lo tomo!" en el issue oficial de GitHub (listados en [PYTHON_GENERAL_ISSUES.md](PYTHON_GENERAL_ISSUES.md) o en el [README](../README.md)).
 - **Ayuda:** Si es tu primera vez, lee la guía [CÓMO HACER TU PRIMER PR](../COMO-HACER-TU-PRIMER-PR.md).
 
-## 🔌 Semana 3: Conectando Procesos (Nerve - Nivel 1)
+##  Semana 3: Conectando Procesos (Nerve - Nivel 1)
 
 Una vez que te sientas cómodo/a con Python básico, es hora de usar [Nerve](https://github.com/Kaia-Alenia/alenia-nerve). Aquí crearás pequeños programas que "hablan" entre sí de forma local.
 
@@ -19,7 +19,7 @@ Una vez que te sientas cómodo/a con Python básico, es hora de usar [Nerve](htt
 - **Cuántos son:** 3 retos (Chat en terminal, Reloj sincronizado, Traductor de mensajes).
 - **Tu misión:** Completar la comunicación de procesos (IPC) usando Nerve. Conectar dos terminales por primera vez es mágico.
 
-## 🚀 Semana 4: El Gran Salto (El Mega Reto)
+##  Semana 4: El Gran Salto (El Mega Reto)
 
 ¡Felicidades! Si has completado todo el bloque de Nivel Principiante (Python General 1 y Nerve 1), has desbloqueado tu prueba de fuego.
 

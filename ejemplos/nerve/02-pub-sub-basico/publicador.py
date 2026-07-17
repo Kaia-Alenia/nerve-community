@@ -5,7 +5,7 @@ def main():
     print("Iniciando publicador (estación de radio)...")
     cliente = NexusClient()
     cliente.connect("publicador_noticias")
-    print("✅ Publicador conectado al Hub.")
+    print(" Publicador conectado al Hub.")
     
     contador = 1
     try:
@@ -17,7 +17,7 @@ def main():
             }
             
             # Usamos broadcast para enviarlo a todos los nodos conectados
-            print(f"📡 Transmitiendo (broadcast): {noticia['titular']}")
+            print(f" Transmitiendo (broadcast): {noticia['titular']}")
             cliente.broadcast(noticia)
             
             contador += 1

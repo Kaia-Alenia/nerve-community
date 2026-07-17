@@ -1,69 +1,73 @@
 # Borradores de Posts para Reddit
 
-Aquí tienes los 4 posts adaptados a diferentes subreddits, manteniendo tu voz, las reglas y un enfoque orgánico.
+Aquí tienes los 4 posts adaptados a diferentes subreddits. El tono ahora es mucho más casual y relajado (sin ser demasiado callejero), evitando palabras rebuscadas y mencionando solo que darás premios.
 
 ---
 
 ## 1. Para r/learnpython o r/aprenderprogramacion (Enfoque en principiantes y aprendizaje)
-**Título:** He sido desarrollador por varios años y decidí crear un repo para que aprender Python no sea solo "copiar y pegar" (Bonus: Regalo suscripciones de Google AI Pro a los mejores PRs)
+**Título:** Soy dev y profe, y armé un repo en GitHub para aprender Python sin caer en el "vibe coding" (y ando dando premios a los mejores)
 
 **Cuerpo:**
-Hola a todos. Soy Kxlt de Alenia Studios. Últimamente veo que con el auge del "vibe coding" (generar código con IA sin entenderlo) mucha gente que está aprendiendo Python se salta la lógica base.
+Hola a todos. Soy Kxlt de Alenia Studios. Llevo un rato en esto de programar y, como también tengo experiencia dando clases, hay algo que me frustra un poco: veo a mucha gente con ganas de aprender, pero que se pierde viendo tutoriales sin fin o, peor aún, cayendo en el "vibe coding" (dejar que la IA te arme todo el código sin entender ni qué hace).
 
-Como pedagogo de formación y dev, esto me frustra un poco, así que armé un repositorio en GitHub para la comunidad de LATAM. No es el típico tutorial de YouTube. Es una progresión estructurada de retos (de principiante a intermedio) donde la idea es que te equivoques, subas tu PR y recibas feedback constructivo.
+Aprender no debería ser solo copiar y pegar. Por eso armé un repo en GitHub con una ruta bien estructurada. No son ejercicios sueltos al azar; es un paso a paso pensado para que te equivoques, subas tu código, le pierdas el miedo a hacer un Pull Request en público y recibas feedback de verdad. La idea es aprender a usar la IA como apoyo, no para que haga tu trabajo.
 
-Quiero ayudar a que la gente le pierda el miedo a publicar código en público. Y para incentivar que se animen, a las contribuciones más destacadas les estoy regalando **4 meses de Google AI Pro** de mi bolsillo.
+Para animar a la comunidad (porque sé que da nervios mostrar tu código), voy a estar regalando premios de mi propia bolsa a los PRs que más destaquen.
 
-Si quieres empezar desde cero sin presión, échale un ojo al Reto 00 (Rompehielo). Y si alguien más avanzado se quiere sumar a dar mentorías, también es súper bienvenido.
+Si quieren probar sin presión, échenle un ojo al Reto 00. Y si ya tienen experiencia y quieren echar la mano dando feedback o revisando código, son más que bienvenidos. Aquí venimos a sumar.
 
 [Enlace al repositorio]
 
 ---
 
 ## 2. Para r/Python (Enfoque más técnico y de colaboración)
-**Título:** Busco colaboradores para un repo educativo en Python centrado en evitar el "vibe coding" y enseñar buenas prácticas
+**Título:** Busco devs que quieran echar la mano para combatir el "vibe coding" en un repo educativo
 
 **Cuerpo:**
-Hola r/Python. Dirijo un estudio independiente (Alenia Studios) y he estado notando que los juniors hoy en día dependen demasiado de la IA sin entender las bases, lo que lleva a código difícil de mantener.
+Hola gente. Dirijo un estudio independiente (Alenia Studios) y he notado algo medio preocupante: hay muchos juniors dependiendo tanto de la IA que no entienden las bases de lo que escriben. Es el clásico "vibe coding", pedir código y rezar para que compile.
 
-Para combatir esto, creé un repositorio Open Source enfocado en la enseñanza estructurada de Python. Empezamos con retos generales (nivel 1 y 2) y escalamos a la creación de MVPs usando herramientas IPC locales (como un framework propio que uso llamado Nerve).
+Para intentar ayudar un poco con eso, armé un repo estructurado para enseñar Python a la comunidad en español. Tiene un orden lógico (también soy profe), empezando con lo básico y escalando hasta armar cosas funcionales usando IPC local.
 
-Estoy buscando devs con experiencia que quieran sumarse como colaboradores. La idea es proponer nuevos retos, dar feedback en los PRs y ayudar a la comunidad de LATAM a programar "de verdad". 
+El gran tope de los que van empezando es el pánico a equivocarse frente a los demás. Para romper ese hielo, estoy poniendo premios de mi bolsa para los PRs más interesantes.
 
-Para los que participan y aprenden, estoy financiando **4 meses gratis de Google AI Pro** como premio a buenas contribuciones, así que el incentivo está ahí. 
+Lo que busco por acá son colaboradores. Si ya le sabes y te gusta la idea de proponer retos, dar reviews constructivos y ayudar a que otros no dependan a ciegas de ChatGPT, me encantaría que te unas.
 
-Si te interesa mentorear, armar retos o si simplemente quieres usar el repo para aprender, dejo el enlace abajo. 
+La onda es 100% colaborativa y de buena vibra. Les dejo el repo por si quieren sumar.
 
 [Enlace al repositorio]
 
 ---
 
 ## 3. Para r/opensource (Enfoque en comunidad y crecimiento del proyecto)
-**Título:** I created a structured GitHub repo to help beginners learn Python the right way (without relying blindly on AI). Looking for contributors/mentors! (Post in EN/ES)
+**Título:** Armé un proyecto Open Source para enseñar Python paso a paso y quitar el miedo a contribuir
 
 **Cuerpo:**
-*Note: The repo is currently focused on the LATAM community (Spanish), but code is universal and we welcome everyone.*
+Qué tal a todos. Soy Kxlt. Hace poco empecé una iniciativa Open Source pensada para la comunidad en español. Como dev y profe, veía que mucha gente se queda atorada viendo videos o le deja todo el trabajo a la IA sin entender cómo funciona su código.
 
-Hi! I'm the lead of Alenia Studios. I recently launched an open-source initiative designed to teach programming through a structured, pedagogical path (I have a background in pedagogy). The main goal is to fight the "vibe coding" trend where beginners just copy-paste AI code without understanding the underlying logic.
+El proyecto es un repo de GitHub a base de retos que van subiendo de nivel. El chiste no es solo enseñar sintaxis, sino quitarle a los principiantes el terror de publicar su código y hacer un Pull Request en un entorno Open Source.
 
-We use a challenge-based system. Beginners submit PRs, get code reviews, and lose the fear of showing their work. To encourage participation, I'm personally giving away **4-month Google AI Pro subscriptions** to outstanding contributors.
+Para motivar a que la gente participe y se anime a equivocarse en público, estoy dando premios de mi propio bolsillo a los colaboradores que más le echen ganas.
 
-We are currently expanding our Python Intermediate challenges and introducing IPC (Inter-Process Communication) challenges. If you are an experienced dev looking to mentor, review PRs, or design new coding challenges, we'd love to have you on board!
+Ahorita ya estamos subiendo a retos más pesados y armando proyectitos reales. Si les interesa el tema de enseñar, dar mentoría o nada más quieren ayudar abriendo issues y revisando código, toda ayuda es súper bien recibida.
+
+El proyecto se trata de hacer comunidad y tirar buena onda. Aquí se los dejo.
 
 [Enlace al repositorio]
 
 ---
 
 ## 4. Para r/programacion (Enfoque general, comunidad LATAM)
-**Título:** Si estás aprendiendo a programar y te da miedo subir tus proyectos a GitHub, armé este espacio para ti (y premio a los mejores)
+**Título:** Si te da pánico subir tu código a GitHub o hacer tu primer Pull Request, armé un repo para practicar (con premios a los mejores)
 
 **Cuerpo:**
-Hola a todos. Soy Kxlt de Alenia Studios. Veo que muchos aquí preguntan "cómo conseguir el primer trabajo" o "qué hacer después del típico curso". 
+Hola a todos. Soy Kxlt de Alenia Studios. Seguido leo posts de gente preguntando qué hacer después del clásico curso de internet o cómo conseguir su primer trabajo. Siento que lo más difícil no es la parte técnica, sino el miedo a equivocarse en público: da terror que alguien más lea tu código y te juzgue.
 
-El mayor obstáculo que veo es que a muchos les da pánico subir su código o hacer su primer Pull Request. Para romper esa barrera, armé un repositorio enfocado 100% en ayudar a la gente de LATAM a aprender de verdad, con un sistema de retos estructurados (desde nivel ultra básico hasta intermedio).
+Aparte, ahorita es bien fácil caer en el "vibe coding": pedirle todo a la IA, que funcione por arte de magia, pero si se rompe no sabes ni qué hacer porque no le entendiste a la lógica.
 
-El objetivo es usar la IA para colaborar, no para que haga el trabajo por ti ("vibe coding"). Y para hacerlo más interesante, a las personas que manden PRs destacados o ayuden a otros, les estoy regalando **4 meses de Google AI Pro** para que tengan acceso a los mejores modelos.
+Por eso armé un repo en GitHub estructurado para que la comunidad aprenda a programar de verdad, de a poco. Aquí el chiste es equivocarse, subir tu PR, recibir comentarios buena onda y aprender a usar la IA como compañera, no para que piense por ti.
 
-La regla número 1 del repo es que aquí venimos a sumar y con empatía. Si te interesa perderle el miedo a GitHub o si ya sabes programar y quieres ayudar revisando código, te invito a darte una vuelta.
+Para ponerlo más interesante, a los que manden PRs buenos o le ayuden a los demás, les voy a estar regalando premios que salen de mi bolsa.
+
+Si no saben por dónde empezar, hay un Reto 00 que es nada más para romper el hielo y probar cómo hacer un PR sin estrés. Y si ya le saben bien y quieren ayudar revisando código, dense una vuelta. Aquí se trata de echar la mano.
 
 [Enlace al repositorio]

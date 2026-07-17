@@ -13,7 +13,7 @@ python ejemplo_propiedades.py
 ```
 
 ## ¿Qué retos usan esta base?
-- 👉 **[Ver Issue #32 en GitHub: Python General 18 - Inventario de Tienda (POO Avanzada)](https://github.com/Kaia-Alenia/nerve-community/issues/32)**
+-  **[Ver Issue #32 en GitHub: Python General 18 - Inventario de Tienda (POO Avanzada)](https://github.com/Kaia-Alenia/nerve-community/issues/32)**
 
 ## Nota para principiantes
 El decorador `@property` transforma un método en un atributo virtual. Esta es la forma "Pythónica" de manejar getters y setters. Si luego necesitas permitir que el valor cambie, agregarás un decorador secundario llamado `@nombre_de_propiedad.setter`.

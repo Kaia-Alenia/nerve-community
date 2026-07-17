@@ -12,13 +12,13 @@ Asegúrate de tener lo siguiente:
 
 ---
 
-## 🛠️ Paso 1: Haz un Fork
+##  Paso 1: Haz un Fork
 Un *fork* es hacer una copia exacta de este proyecto y ponerla en tu propia cuenta de GitHub. Así puedes experimentar y romper cosas en tu copia sin afectar el repositorio original.
 Para hacerlo, ve a la página principal de este repositorio y dale clic al botón **Fork** que está arriba a la derecha.
 
 ---
 
-## 💻 Paso 2: Clona tu fork en tu computadora
+##  Paso 2: Clona tu fork en tu computadora
 Abre tu terminal (línea de comandos) y escribe el siguiente comando, cambiando `TU-USUARIO` por tu nombre de usuario en GitHub:
 
 ```bash
@@ -28,7 +28,7 @@ cd nerve-community
 
 ---
 
-## 🌱 Paso 3: Crea una rama nueva
+##  Paso 3: Crea una rama nueva
 **Nunca** trabajes directamente en la rama `main`. Es una buena práctica crear una "rama" (branch) separada para cada tarea o reto que vayas a resolver.
 
 ```bash
@@ -37,14 +37,14 @@ git checkout -b solucion-reto-01
 
 ---
 
-## 🎯 Paso 4: Elige un reto
+##  Paso 4: Elige un reto
 Ve a la pestaña de **Issues** en el repositorio original.
 Busca los issues que tengan la etiqueta `good-first-issue` o `disponible`.
 Si encuentras uno que te guste, deja un comentario que diga: *"¡Yo lo tomo!"* o *"Me gustaría intentar resolver esto"*. Así, evitamos que dos personas hagan el mismo reto al mismo tiempo.
 
 ---
 
-## 📦 Paso 5: Instala dependencias y prueba que todo funcione
+##  Paso 5: Instala dependencias y prueba que todo funcione
 Crea un entorno virtual e instala lo necesario (si tu reto lo requiere):
 
 ```bash
@@ -62,13 +62,13 @@ pip install alenia-nerve
 
 ---
 
-## ✍️ Paso 6: Escribe tu código
+##  Paso 6: Escribe tu código
 Entra a la carpeta correspondiente a tu nivel y reto (por ejemplo `retos/nivel-1-principiante/01-chat-terminal/`).
 Dentro de esa carpeta, crea tu solución siguiendo las instrucciones del Issue. ¡Diviértete programando!
 
 ---
 
-## 💾 Paso 7: Guarda tus cambios (Commit)
+##  Paso 7: Guarda tus cambios (Commit)
 Una vez que termines y pruebes que funciona, debes guardar tus cambios en git. Asegúrate de escribir un mensaje claro de lo que hiciste.
 
 ```bash
@@ -78,7 +78,7 @@ git commit -m "Agrega solución al reto 01: chat-terminal"
 
 ---
 
-## 🚀 Paso 8: Sube tu rama a tu fork
+##  Paso 8: Sube tu rama a tu fork
 Ahora envía los cambios guardados desde tu computadora a tu repositorio en GitHub:
 
 ```bash
@@ -87,7 +87,7 @@ git push origin solucion-reto-01
 
 ---
 
-## 📬 Paso 9: Abre el Pull Request
+##  Paso 9: Abre el Pull Request
 Ve a tu repositorio fork en GitHub. Verás un botón verde gigante que dice **Compare & pull request**. ¡Dale clic!
 - Llena la plantilla del PR.
 - Menciona qué número de Issue estás resolviendo (ejemplo: `Closes #1`).
@@ -101,7 +101,7 @@ Es **súper normal** que te pidamos hacer algún cambio o corrección. No te lo 
 
 ---
 
-## ❓ Preguntas frecuentes
+##  Preguntas frecuentes
 
 - **¿Y si ya alguien más resolvió el reto que quería?**
 ¡No pasa nada! A veces aceptamos múltiples soluciones si tienen enfoques distintos, o simplemente puedes elegir otro reto. Pregúntanos en el Issue si tienes dudas.

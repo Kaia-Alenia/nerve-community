@@ -8,7 +8,7 @@ def main():
     
     # 2. Conectarse al Hub con un identificador único
     cliente.connect("emisor_01")
-    print("✅ Emisor conectado al Nerve Hub.")
+    print(" Emisor conectado al Nerve Hub.")
     
     # Esperamos un momento para asegurar que el receptor esté listo
     time.sleep(1)

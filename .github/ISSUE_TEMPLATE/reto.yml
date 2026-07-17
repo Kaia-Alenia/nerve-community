@@ -46,4 +46,4 @@ body:
           required: false
   - type: markdown
     attributes:
-      value: "## 🎓 ¿Sabías que...?\nLas soluciones más pulidas y completas pueden ser invitadas a integrarse directamente al repositorio de producción [zenith-nerve-tools](https://github.com/Kaia-Alenia/zenith-nerve-tools), con crédito total para ti como autor/a. ¡Esfuérzate, tu código puede terminar siendo una herramienta real que otros usen!"
+      value: "##  ¿Sabías que...?\nLas soluciones más pulidas y completas pueden ser invitadas a integrarse directamente al repositorio de producción [zenith-nerve-tools](https://github.com/Kaia-Alenia/zenith-nerve-tools), con crédito total para ti como autor/a. ¡Esfuérzate, tu código puede terminar siendo una herramienta real que otros usen!"

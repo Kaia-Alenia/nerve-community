@@ -17,7 +17,7 @@ class ServidorCalculadora:
             b = payload.get("b", 0)
             resultado = a + b
             
-            print(f"🧮 Solicitud de suma recibida de '{remitente}': {a} + {b} = {resultado}")
+            print(f" Solicitud de suma recibida de '{remitente}': {a} + {b} = {resultado}")
             
             # Construimos la respuesta
             respuesta = {
@@ -31,7 +31,7 @@ class ServidorCalculadora:
 
     def iniciar(self):
         self.cliente.connect("servidor_calculadora")
-        print("✅ Servidor Calculadora en línea y esperando peticiones...")
+        print(" Servidor Calculadora en línea y esperando peticiones...")
         
         self.cliente.listen(self.atender_peticion)
         

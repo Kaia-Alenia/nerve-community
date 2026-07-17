@@ -1,4 +1,4 @@
-# 🐍 Retos Nivel 2: Intermedio
+#  Retos Nivel 2: Intermedio
 
 ¡Bienvenido/a al segundo nivel de retos de Python! 
 
@@ -16,4 +16,4 @@ En esta sección encontrarás ejercicios pensados para llevar tus habilidades un
 | 18 | Inventario de tienda | Dataclasses | [#32](https://github.com/Kaia-Alenia/nerve-community/issues/32) |
 
 ---
-[🔙 Volver al inicio](../../../README.md)
+[ Volver al inicio](../../../README.md)

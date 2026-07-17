@@ -23,7 +23,7 @@ jobs:
             });
             
             if (pulls.length === 1) {
-              const comment = `¡Hola @${prAuthor}! 👋\n\n¡Felicidades por abrir tu **primer Pull Request** en \`nerve-community\`! 🎉 Estamos muy felices de tenerte aquí.\n\nUn mantenedor (alguien del equipo) revisará tu código lo antes posible. Si te pedimos algunos cambios, ¡no te preocupes! Es el flujo normal para aprender y mejorar juntos.\n\nSi necesitas algo, no dudes en comentar aquí mismo. ¡Mucho éxito! 🚀`;
+              const comment = `¡Hola @${prAuthor}! \n\n¡Felicidades por abrir tu **primer Pull Request** en \`nerve-community\`!  Estamos muy felices de tenerte aquí.\n\nUn mantenedor (alguien del equipo) revisará tu código lo antes posible. Si te pedimos algunos cambios, ¡no te preocupes! Es el flujo normal para aprender y mejorar juntos.\n\nSi necesitas algo, no dudes en comentar aquí mismo. ¡Mucho éxito! `;
               
               await github.rest.issues.createComment({
                 issue_number: context.payload.pull_request.number,

@@ -14,7 +14,7 @@ python ejemplo_json.py
 Pruébalo un par de veces consecutivas. Verás cómo el puntaje guardado es recordado en la siguiente ejecución. ¡Abre el archivo `score.json` generado para ver cómo luce!
 
 ## ¿Qué retos usan esta base?
-- 👉 **[Ver Issue #31 en GitHub: Python General 17 - Lector de Configuraciones (JSON/YAML)](https://github.com/Kaia-Alenia/nerve-community/issues/31)**
+-  **[Ver Issue #31 en GitHub: Python General 17 - Lector de Configuraciones (JSON/YAML)](https://github.com/Kaia-Alenia/nerve-community/issues/31)**
 
 ## Nota para principiantes
 Fíjate siempre en la diferencia entre `json.dump()` (que escribe directamente en un archivo) y `json.dumps()` (que devuelve un *string* de JSON sin escribir nada). Lo mismo aplica para `load()` vs `loads()`. La letra "s" al final significa "string".

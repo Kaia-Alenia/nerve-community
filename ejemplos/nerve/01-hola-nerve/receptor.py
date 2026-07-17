@@ -3,7 +3,7 @@ from nerve import NexusClient
 
 def procesar_mensaje(mensaje_crudo):
     # El servidor nos entrega el mensaje completo. Lo extraemos.
-    print(f"📩 ¡Mensaje recibido!: {mensaje_crudo}")
+    print(f" ¡Mensaje recibido!: {mensaje_crudo}")
     
     # Podemos extraer el payload original si queremos
     payload = mensaje_crudo.get("payload", {})
@@ -16,7 +16,7 @@ def main():
     
     # Nos conectamos como "receptor_01"
     cliente.connect("receptor_01")
-    print("✅ Receptor conectado. Esperando mensajes...")
+    print(" Receptor conectado. Esperando mensajes...")
     
     # Registramos la función que se llamará al recibir mensajes
     cliente.listen(procesar_mensaje)

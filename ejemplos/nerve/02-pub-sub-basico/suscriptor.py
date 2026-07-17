@@ -14,13 +14,13 @@ def al_recibir_noticia(mensaje_crudo):
     
     if payload.get("canal") == "noticias_tech":
         titular = payload.get("titular", "Sin titular")
-        print(f"[{nombre_nodo}] 📰 Nueva noticia interceptada: {titular}")
+        print(f"[{nombre_nodo}]  Nueva noticia interceptada: {titular}")
 
 def main():
     print(f"Iniciando {nombre_nodo}...")
     cliente = NexusClient()
     cliente.connect(nombre_nodo)
-    print(f"✅ {nombre_nodo} conectado. Escuchando el canal 'noticias_tech'...")
+    print(f" {nombre_nodo} conectado. Escuchando el canal 'noticias_tech'...")
     
     cliente.listen(al_recibir_noticia)
     
