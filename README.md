@@ -11,6 +11,9 @@
 ## 🧠 ¿Qué es este repo?
 Este es un espacio de aprendizaje y contribución diseñado para cualquiera que quiera perderle el miedo a colaborar en proyectos Open Source. Usamos **Nerve** como excusa técnica para construir herramientas y scripts pequeños, divertidos y útiles. **No hay preguntas tontas.** Si nunca has hecho un Pull Request, o si apenas estás aprendiendo a programar en Python, este es el lugar ideal para ti. 
 
+### 🔍 ¿Por qué existe este repo?
+Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Porque.md).
+
 ## 🔌 ¿Por qué existe Nerve?
 [alenia-nerve](https://github.com/Kaia-Alenia/alenia-nerve) es un sistema de comunicación entre procesos (IPC) local, multiplataforma y offline-first, que te permite conectar diferentes scripts (incluso en diferentes lenguajes) de forma súper sencilla usando sockets locales (Unix Sockets en Linux/macOS, TCP en Windows).
 
@@ -48,9 +51,17 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 | **08-organizador-archivos** | 🟢 Principiante | Python | `disponible` | [#20](https://github.com/Kaia-Alenia/nerve-community/issues/20) |
 | **09-recordatorio-tareas** | 🟡 Intermedio | Python | `disponible` | [#21](https://github.com/Kaia-Alenia/nerve-community/issues/21) |
 | **10-analizador-texto** | 🟢 Principiante | Python | `disponible` | [#22](https://github.com/Kaia-Alenia/nerve-community/issues/22) |
+| **11-profiler-de-funciones** | 🟡 Intermedio | Python | `disponible` | [#25](https://github.com/Kaia-Alenia/nerve-community/issues/25) |
+| **12-validador-de-emails** | 🟡 Intermedio | Python | `disponible` | [#26](https://github.com/Kaia-Alenia/nerve-community/issues/26) |
+| **13-lector-archivos-gigantes** | 🟡 Intermedio | Python | `disponible` | [#27](https://github.com/Kaia-Alenia/nerve-community/issues/27) |
+| **14-cli-del-clima** | 🟡 Intermedio | Python | `disponible` | [#28](https://github.com/Kaia-Alenia/nerve-community/issues/28) |
+| **15-herramienta-de-backup** | 🟡 Intermedio | Python | `disponible` | [#29](https://github.com/Kaia-Alenia/nerve-community/issues/29) |
+| **16-validador-de-edad** | 🟡 Intermedio | Python | `disponible` | [#30](https://github.com/Kaia-Alenia/nerve-community/issues/30) |
+| **17-lector-de-configuraciones** | 🟡 Intermedio | Python | `disponible` | [#31](https://github.com/Kaia-Alenia/nerve-community/issues/31) |
+| **18-inventario-de-tienda** | 🟡 Intermedio | Python | `disponible` | [#32](https://github.com/Kaia-Alenia/nerve-community/issues/32) |
 
 > 📝 **¿Eres mantenedor/a o quieres ver el texto original de los retos?**
-> Consulta las plantillas de los issues en [RETOS_ISSUES.md](RETOS_ISSUES.md) (para los retos Rompehielo y Core) y [PYTHON_GENERAL_ISSUES.md](PYTHON_GENERAL_ISSUES.md) (para los retos de Python General).
+> Consulta las plantillas de los issues en [RETOS_ISSUES.md](docs/RETOS_ISSUES.md) (para los retos Rompehielo y Core) y [PYTHON_GENERAL_ISSUES.md](docs/PYTHON_GENERAL_ISSUES.md) (para los retos de Python General).
 
 ## 🤔 ¿Nunca has hecho un Pull Request?
 ¡No te preocupes! Tenemos una guía paso a paso, desde cero, explicando cada comando que necesitas escribir. Léela aquí: **[CÓMO HACER TU PRIMER PR](COMO-HACER-TU-PRIMER-PR.md)**.
