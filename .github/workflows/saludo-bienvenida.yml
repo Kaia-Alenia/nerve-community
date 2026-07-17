@@ -7,6 +7,9 @@ on:
 jobs:
   welcome:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
     steps:
       - name: Saludo al autor del PR
         uses: actions/github-script@v6
@@ -15,14 +18,17 @@ jobs:
             const prAuthor = context.payload.pull_request.user.login;
             
             // Verificar si el usuario ya ha hecho PRs antes en este repo
-            const { data: pulls } = await github.rest.pulls.list({
+            const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'all',
               creator: prAuthor,
             });
             
-            if (pulls.length === 1) {
+            // Filtrar solo los que son Pull Requests (la API devuelve issues y PRs juntos)
+            const userPulls = issues.filter(issue => issue.pull_request);
+            
+            if (userPulls.length === 1) {
               const comment = `¡Hola @${prAuthor}! \n\n¡Felicidades por abrir tu **primer Pull Request** en \`nerve-community\`!  Estamos muy felices de tenerte aquí.\n\nUn mantenedor (alguien del equipo) revisará tu código lo antes posible. Si te pedimos algunos cambios, ¡no te preocupes! Es el flujo normal para aprender y mejorar juntos.\n\nSi necesitas algo, no dudes en comentar aquí mismo. ¡Mucho éxito! `;
               
               await github.rest.issues.createComment({
