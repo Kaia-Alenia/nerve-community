@@ -13,7 +13,7 @@ Para tu reto (analizador de texto):
   y reportar: líneas, palabras, promedio por línea,
   y las 10 palabras más frecuentes (sin stopwords).
 
-Glosario:
+Glosario de términos "raros":
   split()          — divide un string por espacios y devuelve una lista de palabras
                      "hola mundo".split() → ["hola", "mundo"]
   lower()          — convierte todo a minúsculas (para comparar sin importar case)

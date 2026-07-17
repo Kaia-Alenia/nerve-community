@@ -13,7 +13,7 @@ Para tu reto (organizador de archivos):
   itera los archivos, clasifica por extensión, y muévelos.
   Agrega el modo --dry-run para simular sin mover nada.
 
-Glosario de pathlib:
+Glosario de términos "raros" (pathlib y shutil):
   Path("ruta")          — crea un objeto Path (más potente que un string de ruta)
   Path.cwd()            — devuelve la carpeta de trabajo actual
   ruta.iterdir()        — genera todos los archivos y carpetas dentro de 'ruta'

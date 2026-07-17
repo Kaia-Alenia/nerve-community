@@ -13,15 +13,15 @@ Para tu reto (web scraper):
   (título + precio de varios libros), que es una página pública
   diseñada específicamente para practicar scraping.
 
-Glosario de términos:
-  requests     — librería para hacer peticiones HTTP (GET, POST, etc.)
-  BeautifulSoup— librería para navegar y buscar dentro de HTML/XML
-  html.parser  — el motor de Python que interpreta el texto HTML
-                 (alternativa: lxml, más rápido pero requiere instalación)
-  find_all()   — busca TODOS los elementos que coincidan con el selector
-  find()       — busca solo el PRIMERO que coincida
-  .text        — extrae el texto dentro de una etiqueta HTML (sin las etiquetas)
-  .get("attr") — extrae el valor de un atributo HTML (ej: href, src, class)
+Glosario de términos "raros":
+  requests     — Librería para pedir datos a internet (como lo hace tu navegador).
+  BeautifulSoup— Librería que toma código HTML feo y te deja buscar dentro de él fácilmente.
+  html.parser  — El motor que lee el HTML. Sin él, BeautifulSoup no sabe cómo leer el texto.
+  raise_for_status() — Función que hace que el programa explote si la página no existe (Error 404).
+  find_all()   — Busca TODOS los elementos que coincidan y devuelve una lista.
+  find()       — Busca solo el PRIMER elemento que coincida.
+  .text        — Extrae solo el texto limpio que ven los humanos (sin código HTML).
+  .get("attr") — Extrae un atributo invisible, como el enlace (href) de un botón.
 """
 
 import requests
@@ -51,12 +51,24 @@ def obtener_frases():
 
         print(f"Se encontraron {len(elementos)} frases en la página.\n")
 
+        datos_extraidos = []
         for elemento in elementos:
             # .find() dentro de un elemento busca solo en ese bloque
             texto = elemento.find("span", class_="text").text
             autor = elemento.find("small", class_="author").text
+            datos_extraidos.append({"texto": texto, "autor": autor})
             print(f'"{texto}"')
             print(f"  — {autor}\n")
+
+        # 5. Guardar los datos en un archivo CSV (pieza final del rompecabezas)
+        import csv
+        with open("frases.csv", "w", encoding="utf-8", newline="") as f:
+            # fieldnames define el nombre de las columnas (llaves del diccionario)
+            escritor = csv.DictWriter(f, fieldnames=["texto", "autor"])
+            escritor.writeheader()
+            escritor.writerows(datos_extraidos)
+            
+        print("✓ Datos guardados exitosamente en 'frases.csv'")
 
     except requests.exceptions.ConnectionError:
         print("Error: No se pudo conectar. Revisa tu conexión a internet.")

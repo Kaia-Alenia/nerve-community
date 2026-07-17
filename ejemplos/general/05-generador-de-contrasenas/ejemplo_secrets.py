@@ -12,17 +12,15 @@ Para tu reto (generador de contraseñas):
   parámetros del usuario (longitud, símbolos sí/no, mayúsculas sí/no),
   y usa secrets.choice() en un loop para construir la contraseña.
 
-Glosario:
-  secrets          — módulo para aleatoriedad criptográficamente segura
-                     (usa fuentes del sistema operativo como /dev/urandom)
-  random           — módulo de aleatoriedad predecible (NO usar para contraseñas)
-  string.digits    — "0123456789"
-  string.ascii_lowercase — "abcdefghijklmnopqrstuvwxyz"
-  string.ascii_uppercase — "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  string.punctuation     — todos los símbolos: !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~
-  join()           — une una lista de caracteres en un solo string
-                     ej: "".join(["a","b","c"]) → "abc"
-  secrets.choice() — elige UN elemento al azar de cualquier secuencia, de forma segura
+Glosario de términos "raros":
+  secrets          — módulo para aleatoriedad segura (usa fuentes del sistema).
+  random           — módulo de aleatoriedad predecible (NO usar para contraseñas).
+  string.digits    — contiene "0123456789".
+  string.ascii...  — contiene letras ("abcdefghijklmnopqrstuvwxyz", etc).
+  string.punctuation — todos los símbolos: !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~
+  "".join(lista)   — une una lista de caracteres en un solo texto (ej: "a" + "b" = "ab").
+  _ (guion bajo)   — se usa en `for _ in range()` cuando vas a repetir algo N veces 
+                     pero no necesitas usar el número de la vuelta actual.
 """
 
 import secrets

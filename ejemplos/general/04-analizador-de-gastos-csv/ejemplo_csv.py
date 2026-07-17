@@ -11,12 +11,15 @@ Para tu reto (analizador de gastos):
   Aplica el mismo patrón para leer tu CSV de gastos
   (fecha, categoría, monto) y calcular totales por categoría.
 
-Glosario:
-  csv.DictReader  — lee el CSV convirtiendo cada fila en un dict,
-                    donde las llaves son los nombres de las columnas (primer fila)
-  csv.reader      — más básico: devuelve cada fila como lista de strings
-  float(valor)    — convierte un string como "1234.50" a número decimal
-  encoding="utf-8"— importante para archivos con caracteres especiales (tildes, ñ)
+Glosario de términos "raros":
+  with open(...) as f — Abre un archivo y lo cierra automáticamente al terminar. 
+                        'f' es una variable corta para 'file'.
+  "r" o "w"           — Modos: "r" (read = leer), "w" (write = escribir).
+  encoding="utf-8"    — Asegura que los acentos y caracteres especiales (ñ, á) se guarden bien.
+  newline=""          — Evita que se escriban líneas en blanco extra entre filas en Windows.
+  csv.DictReader      — Lee el CSV convirtiendo cada fila en un diccionario (usa D mayúscula).
+  csv.reader          — Más básico: devuelve cada fila como lista de strings.
+  float(valor)        — Convierte un texto como "1234.50" a un número decimal.
 
 Archivo de ejemplo (empleados.csv):
   nombre,departamento,salario

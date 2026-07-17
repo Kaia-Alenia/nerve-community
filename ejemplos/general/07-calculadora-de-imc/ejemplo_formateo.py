@@ -11,7 +11,7 @@ Para tu reto (calculadora de IMC humano):
   Aplica el mismo patrón: float(input()) para peso y altura,
   cálculo matemático, y comparación de rangos para categorizar el resultado.
 
-Glosario:
+Glosario de términos "raros":
   float(valor)     — convierte un string a número decimal. Lanza ValueError si falla.
   round(num, n)    — redondea 'num' a 'n' decimales. round(7.5678, 2) → 7.57
   f"{valor:.2f}"   — formatea un número en un f-string con exactamente 2 decimales

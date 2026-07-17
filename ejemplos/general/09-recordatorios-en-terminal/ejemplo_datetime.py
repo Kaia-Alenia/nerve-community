@@ -12,7 +12,7 @@ Para tu reto (recordatorios en terminal):
   y en un loop compara datetime.now() con esa fecha.
   Cuando now() >= fecha_recordatorio, muestra la alerta.
 
-Glosario:
+Glosario de términos "raros":
   datetime.datetime.now()     — fecha y hora actual del sistema
   datetime.datetime.strptime(texto, formato) — convierte un string a datetime
     El formato usa códigos:

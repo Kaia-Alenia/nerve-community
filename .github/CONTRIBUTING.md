@@ -63,8 +63,34 @@ pip install alenia-nerve
 ---
 
 ##  Paso 6: Escribe tu código
-Entra a la carpeta correspondiente a tu nivel y reto (por ejemplo `retos/nivel-1-principiante/01-chat-terminal/`).
-Dentro de esa carpeta, crea tu solución siguiendo las instrucciones del Issue. ¡Diviértete programando!
+Entra a la carpeta correspondiente a tu reto (por ejemplo `retos/nerve/01-chat-terminal/`).
+Dentro de esa carpeta encontrarás el archivo `README.md` con las instrucciones del reto.
+
+Para guardar tu solución, debes crear una carpeta dentro de `soluciones/` en la raíz del repositorio siguiendo la convención `TuUsuario-Lenguaje`. Por ejemplo:
+- `soluciones/Tacos-python/`
+- `soluciones/Maria-rust/`
+- `soluciones/Juan-go/`
+- `soluciones/Ana-js/`
+
+Dentro de tu carpeta personal, puedes crear los archivos necesarios para resolver el reto. ¡Diviértete programando!
+
+### 🛠️ Instrucciones por Lenguaje
+
+**Python:**
+- Se recomienda crear un entorno virtual (`python -m venv env`).
+- Si instalas dependencias, recuerda exportarlas en un `requirements.txt`.
+
+**Rust:**
+- Usa `cargo new tu-proyecto` para crear tu proyecto dentro de tu carpeta de solución.
+- Verifica tu código con `cargo clippy` y formatéalo con `cargo fmt`.
+
+**Go:**
+- Inicializa tu módulo con `go mod init <nombre>`.
+- Formatea tu código usando `go fmt ./...`.
+
+**JavaScript (Node.js):**
+- Inicializa tu proyecto con `npm init -y`.
+- Es buena práctica usar `eslint` o `prettier` para mantener el código limpio.
 
 ---
 
