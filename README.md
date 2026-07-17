@@ -93,5 +93,8 @@ Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financia
 ##  Contribuidores
 ¡Gracias a todas las personas que hacen esto posible! Cada contribución cuenta.
 
+- [taocs](https://github.com/taocs)
+- [Vi-dot1](https://github.com/Vi-dot1)
+
 ## 📄 Licencia
 Este repositorio, al igual que Nerve, está licenciado bajo **GNU GPL v3**. Lee el archivo `LICENSE` para más detalles.
