@@ -1,7 +1,7 @@
 name: "Linter Compasivo (Auto-Format)"
 
 on:
-  pull_request:
+  pull_request_target:
     types: [opened, synchronize]
     paths:
       - '**.py'
@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout del código
         uses: actions/checkout@v4
@@ -41,8 +42,37 @@ jobs:
 
       - name: Comprobar formato en forks
         if: github.event.pull_request.head.repo.full_name != github.repository
+        id: check_format
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
-            echo "::error::El código no está formateado. Como tu PR viene de un fork, KAIA no puede hacer commit automáticamente. Por favor, ejecuta 'pip install black' y 'black .' en tu repositorio local y haz commit de los cambios."
+            echo "incorrecto=true" >> $GITHUB_OUTPUT
             exit 1
           fi
+
+      - name: Comentar en el PR si el formato es incorrecto
+        if: failure() && github.event.pull_request.head.repo.full_name != github.repository
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## ⚠️ Linter Compasivo: Formateo requerido
+
+            ¡Hola @${{ github.event.pull_request.user.login }}! Tu código necesita un pequeño ajuste de formato antes de poder hacer merge.
+
+            Como tu PR viene desde un fork, no puedo corregirlo automáticamente. Pero es muy fácil de solucionar:
+
+            **Ejecuta estos comandos en tu repositorio local:**
+            \`\`\`bash
+            pip install black
+            black .
+            git add -A
+            git commit -m "style: format code with black"
+            git push
+            \`\`\`
+
+            Una vez que hagas push, este check se volverá a ejecutar automáticamente. ¡Ánimo! 💪`
+            });
