@@ -3,7 +3,9 @@ class FondosInsuficientesError(Exception):
     Excepción personalizada lanzada cuando un usuario intenta
     retirar más dinero del que tiene en su cuenta.
     """
+
     pass
+
 
 def procesar_retiro(balance_actual, cantidad_a_retirar):
     """
@@ -16,8 +18,9 @@ def procesar_retiro(balance_actual, cantidad_a_retirar):
             f"Transacción rechazada: Intentas retirar ${cantidad_a_retirar}, "
             f"pero solo tienes ${balance_actual} disponibles."
         )
-    
+
     return balance_actual - cantidad_a_retirar
+
 
 if __name__ == "__main__":
     mi_balance = 500
