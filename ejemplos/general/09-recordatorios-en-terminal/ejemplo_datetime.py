@@ -72,7 +72,9 @@ def calcular_tiempo_restante(fecha_evento: datetime.datetime) -> str:
         return f"Faltan {dias} día(s), {horas} hora(s) y {minutos} minuto(s)"
 
 
-def vigilar_evento(nombre: str, fecha_evento: datetime.datetime, intervalo_seg: int = 5):
+def vigilar_evento(
+    nombre: str, fecha_evento: datetime.datetime, intervalo_seg: int = 5
+):
     """
     Revisa periódicamente si el evento ya llegó.
     Simula el loop de un sistema de recordatorios.
@@ -98,9 +100,13 @@ def vigilar_evento(nombre: str, fecha_evento: datetime.datetime, intervalo_seg: 
 if __name__ == "__main__":
     nombre = input("Nombre del evento: ").strip() or "Mi evento"
     fecha = pedir_fecha_evento()
-    print(f"\nEvento '{nombre}' programado para: {fecha.strftime('%d/%m/%Y a las %H:%M')}")
+    print(
+        f"\nEvento '{nombre}' programado para: {fecha.strftime('%d/%m/%Y a las %H:%M')}"
+    )
     print(calcular_tiempo_restante(fecha))
 
-    respuesta = input("\n¿Quieres que el programa vigile y avise cuando llegue? (s/n): ").lower()
+    respuesta = input(
+        "\n¿Quieres que el programa vigile y avise cuando llegue? (s/n): "
+    ).lower()
     if respuesta == "s":
         vigilar_evento(nombre, fecha)

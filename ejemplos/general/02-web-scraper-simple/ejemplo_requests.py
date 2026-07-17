@@ -62,12 +62,13 @@ def obtener_frases():
 
         # 5. Guardar los datos en un archivo CSV (pieza final del rompecabezas)
         import csv
+
         with open("frases.csv", "w", encoding="utf-8", newline="") as f:
             # fieldnames define el nombre de las columnas (llaves del diccionario)
             escritor = csv.DictWriter(f, fieldnames=["texto", "autor"])
             escritor.writeheader()
             escritor.writerows(datos_extraidos)
-            
+
         print("✓ Datos guardados exitosamente en 'frases.csv'")
 
     except requests.exceptions.ConnectionError:

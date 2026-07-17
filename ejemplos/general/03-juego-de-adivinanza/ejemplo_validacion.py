@@ -45,7 +45,9 @@ def jugar():
         intentos += 1
 
         if intento == color_secreto:
-            print(f"\n¡Correcto! Era '{color_secreto}'. Lo lograste en {intentos} intento(s).")
+            print(
+                f"\n¡Correcto! Era '{color_secreto}'. Lo lograste en {intentos} intento(s)."
+            )
             return
 
         # Pista: comparar letra inicial (equivalente a mayor/menor en números)

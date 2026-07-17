@@ -26,7 +26,7 @@ Glosario de regex:
   {n}        — exactamente n repeticiones
   {n,m}      — entre n y m repeticiones
   ()         — grupo de captura — puedes extraer su contenido con .group(1)
-  
+
   re.match()      — busca solo al INICIO del string
   re.search()     — busca en CUALQUIER parte del string
   re.fullmatch()  — el patrón debe cubrir TODO el string (equivale a ^...$)

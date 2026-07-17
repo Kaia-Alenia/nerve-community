@@ -13,7 +13,7 @@ Para tu reto (Bot Discord Nerve):
 
 Glosario:
   discord.Client()      — La clase base que maneja la conexión con los servidores de Discord.
-  discord.Intents       — Los permisos que le pides a Discord. message_content es obligatorio 
+  discord.Intents       — Los permisos que le pides a Discord. message_content es obligatorio
                           para poder leer el texto de los mensajes.
   @client.event         — Un decorador que le dice a la librería que esa función manejará un evento.
   async def             — Declara una función asíncrona.
@@ -30,10 +30,12 @@ intents.message_content = True  # ¡Importante para poder leer lo que escriben!
 # 2. Inicializar el cliente del bot
 client = discord.Client(intents=intents)
 
+
 # 3. Definir qué pasa cuando el bot se conecta exitosamente
 @client.event
 async def on_ready():
-    print(f'✅ Conectado exitosamente como {client.user}')
+    print(f"✅ Conectado exitosamente como {client.user}")
+
 
 # 4. Definir qué pasa cuando alguien envía un mensaje en un canal
 @client.event
@@ -43,22 +45,26 @@ async def on_message(message):
         return
 
     # Si alguien dice "ping", el bot responde "pong"
-    if message.content.lower() == 'ping':
+    if message.content.lower() == "ping":
         print(f"[{message.author}] dijo ping, respondiendo...")
         # 'await' es necesario siempre que interactuemos con la API de Discord
-        await message.channel.send('pong 🏓')
+        await message.channel.send("pong 🏓")
+
 
 def main():
     # Debes reemplazar esto con tu token real o usar una variable de entorno
     token = os.environ.get("DISCORD_TOKEN", "TU_TOKEN_AQUI")
-    
+
     if token == "TU_TOKEN_AQUI":
-        print("⚠️ ADVERTENCIA: Reemplaza 'TU_TOKEN_AQUI' con el token de tu bot de Discord.")
+        print(
+            "⚠️ ADVERTENCIA: Reemplaza 'TU_TOKEN_AQUI' con el token de tu bot de Discord."
+        )
         print("Puedes obtenerlo en: https://discord.com/developers/applications")
         return
-        
+
     print("Iniciando bot...")
     client.run(token)
+
 
 if __name__ == "__main__":
     main()

@@ -8,7 +8,7 @@ Qué enseña este ejemplo:
 
 Para tu reto (Puente de progreso GIF con Nerve):
   En lugar de un porcentaje fijo, tu receptor de Nerve recibirá actualizaciones
-  (ej. 10%, 20%), y con cada actualización dibujarás la barra correspondiente 
+  (ej. 10%, 20%), y con cada actualización dibujarás la barra correspondiente
   y guardarás la imagen para que una página web u otro cliente pueda verla.
 
 Glosario:
@@ -18,6 +18,7 @@ Glosario:
 """
 
 from PIL import Image, ImageDraw
+
 
 def generar_barra_progreso(porcentaje: int, ruta_salida: str):
     """
@@ -36,7 +37,7 @@ def generar_barra_progreso(porcentaje: int, ruta_salida: str):
 
     # 4. Calculamos el ancho de la barra verde (progreso)
     # Si porcentaje es 50, el ancho será el 50% de 400 = 200.
-    porcentaje = max(0, min(100, porcentaje)) # Aseguramos que esté entre 0 y 100
+    porcentaje = max(0, min(100, porcentaje))  # Aseguramos que esté entre 0 y 100
     ancho_progreso = int((porcentaje / 100) * ancho)
 
     # 5. Dibujamos el rectángulo verde
@@ -49,15 +50,17 @@ def generar_barra_progreso(porcentaje: int, ruta_salida: str):
     imagen.save(ruta_salida)
     print(f"✅ Imagen guardada en: {ruta_salida} con un progreso de {porcentaje}%")
 
+
 def main():
     print("Generando ejemplos de barras de progreso...\n")
-    
+
     # Generamos tres imágenes distintas
     generar_barra_progreso(25, "progreso_25.png")
     generar_barra_progreso(75, "progreso_75.png")
     generar_barra_progreso(100, "progreso_100.png")
-    
+
     print("\nRevisa tu carpeta, deberías ver tres archivos .png nuevos.")
+
 
 if __name__ == "__main__":
     main()

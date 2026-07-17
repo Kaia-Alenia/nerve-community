@@ -14,6 +14,7 @@ Para tu reto (Probador de Carga Nerve):
 import asyncio
 import time
 
+
 # 1. Definir una tarea asíncrona que simula trabajo
 async def simular_peticion(id_peticion: int):
     # Simulamos que enviar un mensaje tarda 100 milisegundos (0.1s)
@@ -21,6 +22,7 @@ async def simular_peticion(id_peticion: int):
     await asyncio.sleep(0.1)
     # Podrías retornar el resultado o simplemente confirmar
     return True
+
 
 async def main():
     total_mensajes = 1000
@@ -43,11 +45,12 @@ async def main():
     tiempo_total = fin - inicio
 
     exitosos = sum(1 for r in resultados if r is True)
-    
+
     # 4. Mostrar estadísticas
     print(f"✅ Prueba finalizada en {tiempo_total:.2f} segundos.")
     print(f"📊 Mensajes exitosos: {exitosos}/{total_mensajes}")
     print(f"⚡ Rendimiento: {(total_mensajes / tiempo_total):.2f} peticiones/segundo")
+
 
 if __name__ == "__main__":
     # Iniciar el bucle de eventos asíncrono

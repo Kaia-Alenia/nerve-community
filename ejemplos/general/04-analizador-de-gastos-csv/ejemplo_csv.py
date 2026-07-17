@@ -12,7 +12,7 @@ Para tu reto (analizador de gastos):
   (fecha, categoría, monto) y calcular totales por categoría.
 
 Glosario de términos "raros":
-  with open(...) as f — Abre un archivo y lo cierra automáticamente al terminar. 
+  with open(...) as f — Abre un archivo y lo cierra automáticamente al terminar.
                         'f' es una variable corta para 'file'.
   "r" o "w"           — Modos: "r" (read = leer), "w" (write = escribir).
   encoding="utf-8"    — Asegura que los acentos y caracteres especiales (ñ, á) se guarden bien.
@@ -52,11 +52,13 @@ def leer_empleados(ruta_csv: str) -> list:
         lector = csv.DictReader(f)
         for fila in lector:
             # Las filas de CSV son siempre strings — convertimos salario a float
-            empleados.append({
-                "nombre": fila["nombre"],
-                "departamento": fila["departamento"],
-                "salario": float(fila["salario"]),
-            })
+            empleados.append(
+                {
+                    "nombre": fila["nombre"],
+                    "departamento": fila["departamento"],
+                    "salario": float(fila["salario"]),
+                }
+            )
 
     return empleados
 
@@ -77,7 +79,9 @@ def reporte_por_departamento(empleados: list):
     print("\n--- Reporte por departamento ---")
     for dept, datos in totales.items():
         promedio = datos["suma"] / datos["cantidad"]
-        print(f"  {dept}: total=${datos['suma']:,.0f} | promedio=${promedio:,.0f} | empleados={datos['cantidad']}")
+        print(
+            f"  {dept}: total=${datos['suma']:,.0f} | promedio=${promedio:,.0f} | empleados={datos['cantidad']}"
+        )
 
 
 if __name__ == "__main__":
@@ -87,13 +91,15 @@ if __name__ == "__main__":
         with open(archivo, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["nombre", "departamento", "salario"])
-            writer.writerows([
-                ["Ana García", "Ingeniería", 35000],
-                ["Luis Martínez", "Marketing", 28000],
-                ["Carmen López", "Ingeniería", 42000],
-                ["Pedro Sánchez", "Marketing", 31000],
-                ["Sofía Ramírez", "Ingeniería", 39000],
-            ])
+            writer.writerows(
+                [
+                    ["Ana García", "Ingeniería", 35000],
+                    ["Luis Martínez", "Marketing", 28000],
+                    ["Carmen López", "Ingeniería", 42000],
+                    ["Pedro Sánchez", "Marketing", 31000],
+                    ["Sofía Ramírez", "Ingeniería", 39000],
+                ]
+            )
         print(f"Archivo '{archivo}' creado de ejemplo.")
 
     empleados = leer_empleados(archivo)

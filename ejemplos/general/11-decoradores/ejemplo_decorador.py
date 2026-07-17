@@ -19,7 +19,7 @@ Glosario:
     Con él, el wrapper "pretende" ser la función original.
     Ejemplo sin wraps: saludar.__name__ → "wrapper"  (MALO)
     Ejemplo con wraps: saludar.__name__ → "saludar"  (CORRECTO)
-  
+
   *args    — captura todos los argumentos posicionales como una tupla
   **kwargs — captura todos los argumentos nombrados como un diccionario
   Usarlos en el wrapper garantiza que el decorador funcione con CUALQUIER función.

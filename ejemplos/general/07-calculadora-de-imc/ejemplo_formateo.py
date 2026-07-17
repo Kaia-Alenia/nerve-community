@@ -32,7 +32,7 @@ def calcular_imc_mascota(peso_kg: float, largo_cm: float) -> float:
     if largo_cm <= 0 or peso_kg <= 0:
         raise ValueError("El peso y el largo deben ser valores positivos.")
     largo_m = largo_cm / 100
-    return peso_kg / (largo_m ** 2)
+    return peso_kg / (largo_m**2)
 
 
 def categorizar_mascota(imc: float) -> str:

@@ -19,7 +19,7 @@ Glosario de términos "raros":
   string.ascii...  — contiene letras ("abcdefghijklmnopqrstuvwxyz", etc).
   string.punctuation — todos los símbolos: !"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~
   "".join(lista)   — une una lista de caracteres en un solo texto (ej: "a" + "b" = "ab").
-  _ (guion bajo)   — se usa en `for _ in range()` cuando vas a repetir algo N veces 
+  _ (guion bajo)   — se usa en `for _ in range()` cuando vas a repetir algo N veces
                      pero no necesitas usar el número de la vuelta actual.
 """
 
