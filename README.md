@@ -74,7 +74,7 @@ Varios de nuestros retos (los de Python General) están marcados con la etiqueta
 
 ##  Reglas de oro (Innegociables)
 - **NUNCA** pidas acceso de escritura directo. Siempre haz un *fork* de este repositorio.
-- **Un PR por reto.** Si te interesa un reto que está libre, comenta "¡Yo lo tomo!" en su issue para reservarlo.
+- **¡Todos pueden participar!** En esta primera edición no hay límite de personas por reto. Si te interesa un reto, simplemente comenta "¡Yo lo tomo!" o "/tomar-reto" en su issue para avisarnos, ¡incluso si alguien más ya lo está haciendo!
 - Todo Pull Request (PR) pasa por una **revisión** antes de hacer *merge*. No te asustes si te pedimos algún cambio; es parte de aprender.
 - **Sé amable.** En los comentarios o reportes de bugs, recuerda que aquí todos estamos aprendiendo. 
 
