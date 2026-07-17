@@ -1,6 +1,6 @@
 # Issues de los Retos de Python General (Plantillas para GitHub)
 
-A continuación tienes el texto para copiar y pegar y crear los 10 issues de los retos de Python General en GitHub. Recuerda asignarles las etiquetas correctas a cada uno (ej. `good-first-issue`, `python-general`, `disponible`).
+A continuación tienes el texto para copiar y pegar y crear los 18 issues de los retos de Python General en GitHub. Recuerda asignarles las etiquetas correctas a cada uno (ej. `good-first-issue`, `python-general`, `disponible`).
 
 ---
 
@@ -33,10 +33,10 @@ Solo Python 3.10+ y su librería estándar (`json` o manejo de archivos de texto
 - Piensa en qué pasa si el usuario intenta marcar como completada una tarea que no existe.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/01-lista-de-tareas-cli/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/01-lista-de-tareas-cli/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -71,10 +71,10 @@ Python 3.10+, `requests`, `beautifulsoup4`.
 - Siempre revisa el archivo `robots.txt` del sitio antes de scrapear cualquier página real.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/02-web-scraper-simple/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/02-web-scraper-simple/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -108,10 +108,10 @@ Solo Python 3.10+ y su librería estándar.
 - Piensa en agregar un límite máximo de intentos como mejora opcional.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/03-juego-de-adivinanza/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/03-juego-de-adivinanza/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -145,10 +145,10 @@ Solo Python 3.10+ y su librería estándar (`csv`).
 - Considera qué pasa si un monto viene con "$" o comas como separador de miles.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/04-analizador-de-gastos-csv/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/04-analizador-de-gastos-csv/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -182,10 +182,10 @@ Solo Python 3.10+ y su librería estándar (`secrets`, `string`, opcionalmente `
 - Puedes usar `argparse` para que el script se use así: `python generador.py --longitud 16 --simbolos`.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/05-generador-de-contrasenas/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/05-generador-de-contrasenas/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -217,10 +217,10 @@ Solo Python 3.10+ y su librería estándar.
 - Organiza tus funciones de conversión en un archivo separado (ej. `conversiones.py`) y el menú en otro (ej. `main.py`), para practicar cómo dividir un proyecto en módulos.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/06-conversor-de-unidades/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/06-conversor-de-unidades/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -253,10 +253,10 @@ Solo Python 3.10+ y su librería estándar.
 - Este es un buen ejercicio para practicar cómo comunicar resultados de forma responsable cuando el tema toca la salud de alguien.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/07-calculadora-de-imc/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/07-calculadora-de-imc/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -290,10 +290,10 @@ Solo Python 3.10+ y su librería estándar (`os`, `shutil`, `pathlib`).
 - Piensa en un diccionario que mapee extensiones a nombres de carpeta, para que sea fácil agregar más tipos de archivo después.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/08-organizador-de-archivos/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/08-organizador-de-archivos/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -327,10 +327,10 @@ Solo Python 3.10+ y su librería estándar (`datetime`, `json`, `time`).
 - Piensa en qué pasa con recordatorios que ya pasaron su fecha antes de que el script se vuelva a abrir.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/09-recordatorios-en-terminal/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/09-recordatorios-en-terminal/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
 
 ---
 
@@ -364,7 +364,292 @@ Solo Python 3.10+ y su librería estándar (opcionalmente `collections.Counter`)
 - Usa expresiones regulares (`re`) o `str.strip(string.punctuation)` para limpiar signos de puntuación antes de contar.
 
 ## 📦 Entregable
-PR con tu código en `retos/python-general/10-analizador-de-texto/tu-usuario/`.
+PR con tu código en `retos/python-general/nivel-1-principiante/10-analizador-de-texto/tu-usuario/`.
 
 ## 🙋 ¿Primera vez contribuyendo?
-Lee nuestra guía [Cómo hacer tu primer PR](../blob/main/COMO-HACER-TU-PRIMER-PR.md).
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 11 — Profiler de funciones (Decoradores)
+
+**Título:** Python General 11 — Profiler de funciones (Decoradores)
+
+## 🎯 Objetivo
+Crear un decorador `@time_it` que mida y registre el tiempo de ejecución de cualquier función, guardándolo en un archivo.
+
+## 📚 Qué vas a aprender
+- Decoradores (`@`).
+- Empaquetado de argumentos (`*args`, `**kwargs`).
+- Funciones de orden superior.
+- Uso básico del módulo `time`.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Solo Python 3.10+ y su librería estándar.
+
+## 📋 Requisitos
+- [ ] Debe recibir una función y medir su tiempo de inicio a fin.
+- [ ] Debe imprimir en terminal el tiempo que tardó.
+- [ ] Debe guardar el registro en un archivo (ej. `tiempos.log`).
+- [ ] `README.md` explicando cómo utilizar el decorador.
+
+## 💡 Pistas
+- Puedes usar `time.time()` o `time.perf_counter()`.
+- Recuerda usar `functools.wraps` si quieres mantener el nombre original de la función.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/11-profiler-de-funciones/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 12 — Validador de correos con tests (Pytest)
+
+**Título:** Python General 12 — Validador de correos con tests (Pytest)
+
+## 🎯 Objetivo
+Escribir un validador de formatos de email y crear una suite de pruebas usando `pytest` para comprobar casos válidos e inválidos.
+
+## 📚 Qué vas a aprender
+- Uso de expresiones regulares (`re`) o lógica manual.
+- Estructura de pruebas unitarias.
+- Uso de `assert` en `pytest`.
+- Manejo de casos borde.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Python 3.10+, `pytest`.
+
+## 📋 Requisitos
+- [ ] La función validadora debe chequear la estructura general de un correo (ej. tiene `@`, tiene un dominio válido).
+- [ ] La suite de tests debe cubrir al menos 5 correos válidos y 5 inválidos.
+- [ ] `README.md` con instrucciones de cómo instalar y correr `pytest`.
+
+## 💡 Pistas
+- `pytest` busca por defecto archivos que empiezan o terminan con `test_`.
+- Puedes usar `pytest.mark.parametrize` para probar varios correos en un solo test.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/12-validador-de-emails/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 13 — Lector de archivos gigantes (Generadores)
+
+**Título:** Python General 13 — Lector de archivos gigantes (Generadores)
+
+## 🎯 Objetivo
+Procesar un archivo de texto inmenso buscando un patrón específico, leyendo línea por línea sin cargar todo en memoria usando un generador (`yield`).
+
+## 📚 Qué vas a aprender
+- Generadores e iteradores.
+- La palabra clave `yield`.
+- Eficiencia de memoria (lazy evaluation).
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Solo Python 3.10+ y su librería estándar.
+
+## 📋 Requisitos
+- [ ] Crea un generador falso o un script para generar un archivo grande (ej. 1 millón de líneas) para probar.
+- [ ] El lector debe ser una función generadora que ceda (yield) las líneas que coinciden con un texto buscado.
+- [ ] `README.md` explicando la diferencia de consumo de RAM frente a `readlines()`.
+
+## 💡 Pistas
+- Usar un bucle `for line in file:` con `yield` evita cargar el archivo completo.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/13-lector-archivos-gigantes/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 14 — CLI del clima (APIs y Auth)
+
+**Título:** Python General 14 — CLI del clima (APIs y Auth)
+
+## 🎯 Objetivo
+Consumir una API del clima enviando una API Key por parámetros o headers, y formateando el resultado en la terminal.
+
+## 📚 Qué vas a aprender
+- Consumo de APIs REST con autenticación sencilla.
+- Parseo avanzado de JSON.
+- Manejo de secretos en variables de entorno o parámetros ocultos.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Python 3.10+, `requests`.
+
+## 📋 Requisitos
+- [ ] El script debe tomar el nombre de una ciudad (ej. a través de `sys.argv` o `input()`).
+- [ ] La API Key NUNCA debe estar en el código. Debe leerse de una variable de entorno (`os.environ`).
+- [ ] Manejo de errores (ciudad no encontrada, key inválida).
+- [ ] `README.md` explicando cómo obtener la API Key y configurar la variable de entorno.
+
+## 💡 Pistas
+- Puedes usar OpenWeatherMap o WeatherAPI (ambas tienen capas gratuitas).
+- Recuerda ignorar archivos `.env` en `.gitignore` si los usas para pruebas locales.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/14-cli-del-clima/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 15 — Herramienta de backup en CLI (Argparse)
+
+**Título:** Python General 15 — Herramienta de backup en CLI (Argparse)
+
+## 🎯 Objetivo
+Crear una herramienta de consola robusta que reciba directorios origen y destino mediante banderas (ej. `--origen`, `--destino`) para copiar archivos.
+
+## 📚 Qué vas a aprender
+- El módulo `argparse`.
+- Diseño de interfaces de línea de comandos.
+- Copia de archivos recursiva.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Solo Python 3.10+ y su librería estándar (`argparse`, `shutil`, `os`).
+
+## 📋 Requisitos
+- [ ] El CLI debe usar `argparse` para aceptar `--origen` y `--destino`.
+- [ ] Opcionalmente, agregar bandera `--dry-run` para solo simular la copia.
+- [ ] Mensajes claros al usuario del progreso o errores (ej. si la ruta de origen no existe).
+- [ ] `README.md` mostrando ejemplos de comandos.
+
+## 💡 Pistas
+- Investiga la función `shutil.copytree` para carpetas completas, o recorre manualmente si quieres más control.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/15-herramienta-de-backup/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 16 — Validador de edad (Excepciones Custom)
+
+**Título:** Python General 16 — Validador de edad (Excepciones Custom)
+
+## 🎯 Objetivo
+Crear un sistema simple de registro que declare e invoque excepciones propias (ej. `EdadInvalidaError`, `MenorDeEdadError`).
+
+## 📚 Qué vas a aprender
+- Herencia de clases (`Exception`).
+- Bloques `try/except` especializados.
+- Uso de la sentencia `raise`.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Solo Python 3.10+ y su librería estándar.
+
+## 📋 Requisitos
+- [ ] Declara al menos dos excepciones personalizadas.
+- [ ] La función principal debe pedir la edad y lanzar estas excepciones según el caso (ej. menores de 18 o edades < 0).
+- [ ] El bucle principal debe atrapar (catch) las excepciones e imprimir mensajes amigables sin crashear.
+- [ ] `README.md` explicando cómo funciona la jerarquía de excepciones en el script.
+
+## 💡 Pistas
+- Crear una excepción personalizada es tan simple como `class MiError(Exception): pass`.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/16-validador-de-edad/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 17 — Gestor de configuraciones (.env o .ini)
+
+**Título:** Python General 17 — Gestor de configuraciones (.env o .ini)
+
+## 🎯 Objetivo
+Crear un script que cargue credenciales simuladas desde un archivo externo (`.env` o `.ini`) y las utilice sin hardcodearlas en el código.
+
+## 📚 Qué vas a aprender
+- Separación entre código y configuración.
+- Lectura de archivos de configuración.
+- Uso del módulo `configparser` o librerías como `python-dotenv`.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Python 3.10+, `python-dotenv` (opcional si usas .env) o `configparser` (para .ini).
+
+## 📋 Requisitos
+- [ ] El script debe intentar leer de la configuración valores como `DB_HOST`, `DB_USER`, `DB_PASS`.
+- [ ] Imprimir un mensaje simulando una conexión a la BD.
+- [ ] Lanzar un error claro si el archivo de configuración falta o le faltan variables necesarias.
+- [ ] `README.md` detallando la importancia de NO subir archivos con contraseñas a GitHub, usando un archivo `.env.example`.
+
+## 💡 Pistas
+- Nunca hagas commit de tu `.env`. Usa un archivo de plantilla como `.env.example` o `config.example.ini`.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/17-lector-de-configuraciones/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
+---
+
+# Python General 18 — Inventario de tienda (Dataclasses)
+
+**Título:** Python General 18 — Inventario de tienda (Dataclasses)
+
+## 🎯 Objetivo
+Modelar un catálogo utilizando `dataclasses` para los productos (nombre, precio, stock), incluyendo un método para calcular el valor total.
+
+## 📚 Qué vas a aprender
+- Programación Orientada a Objetos intermedia.
+- El decorador `@dataclass`.
+- Tipado estático básico (Type Hints).
+- Métodos de instancia.
+
+## 🧩 Nivel
+Intermedio.
+
+## 🛠️ Tecnologías sugeridas
+Solo Python 3.10+ y su librería estándar (`dataclasses`).
+
+## 📋 Requisitos
+- [ ] Define una dataclass `Producto` con tipo de datos para nombre, precio y cantidad en stock.
+- [ ] Crea una clase `Inventario` que contenga una lista de objetos `Producto`.
+- [ ] Implementa métodos para calcular el valor total de todo el stock, agregar y eliminar productos.
+- [ ] `README.md` con las instrucciones de prueba.
+
+## 💡 Pistas
+- Usar `dataclasses` hace que no tengas que escribir un método `__init__` gigante. Python lo hace por ti.
+
+## 📦 Entregable
+PR con tu código en `retos/python-general/nivel-2-intermedio/18-inventario-de-tienda/tu-usuario/`.
+
+## 🙋 ¿Primera vez contribuyendo?
+Lee nuestra guía [Cómo hacer tu primer PR](../COMO-HACER-TU-PRIMER-PR.md).
+
