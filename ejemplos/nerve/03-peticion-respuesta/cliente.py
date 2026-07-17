@@ -13,7 +13,7 @@ class ClientePeticion:
         
         if accion == "respuesta_operacion":
             self.respuesta_recibida = payload.get("resultado")
-            print(f" ¡El servidor respondió! El resultado es: {self.respuesta_recibida}")
+            print(f"✅ ¡El servidor respondió! El resultado es: {self.respuesta_recibida}")
 
     def iniciar(self):
         self.cliente.connect("cliente_calculadora")
@@ -36,7 +36,7 @@ class ClientePeticion:
             tiempo_espera += 1
             
         if self.respuesta_recibida is None:
-            print(" Tiempo de espera agotado. El servidor no contestó.")
+            print("❌ Tiempo de espera agotado. El servidor no contestó.")
             
         self.cliente.disconnect()
 

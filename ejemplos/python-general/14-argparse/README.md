@@ -19,7 +19,7 @@ python ejemplo_argparse.py --help
 ```
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #28 en GitHub: Python General 14 - CLI del Clima (APIs y argparse)](https://github.com/Kaia-Alenia/nerve-community/issues/28)**
+- 👉 **[Ver Issue #28 en GitHub: Python General 14 - CLI del Clima (APIs y argparse)](https://github.com/Kaia-Alenia/nerve-community/issues/28)**
 
 ## Nota para principiantes
 Nota cómo definimos los tipos en `add_argument(..., type=float)`. `argparse` se encarga de convertir automáticamente el texto que introduces en la terminal al tipo de dato que programaste, e incluso lanzará un error limpio si el usuario pasa letras en vez de números.

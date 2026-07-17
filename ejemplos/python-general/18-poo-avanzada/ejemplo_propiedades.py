@@ -28,5 +28,5 @@ if __name__ == "__main__":
     try:
         mi_libro.resumen = "Otro resumen inventado"
     except AttributeError as e:
-        print("\n Error esperado al intentar sobreescribir la propiedad:")
+        print("\n❌ Error esperado al intentar sobreescribir la propiedad:")
         print(f"   {e}")

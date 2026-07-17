@@ -18,7 +18,7 @@ Tu misión es construir un **Producto Mínimo Viable (MVP)** que integre al meno
 Al final de cada trimestre, los mantenedores y moderadores evaluaremos los MVPs entregados. El autor del mejor proyecto recibirá:
 - **4 meses gratis de Google AI Pro** (acceso a Gemini Advanced, Antigravity, y beneficios de Google Cloud).
 
-##  Criterios de Evaluación
+## 📊 Criterios de Evaluación
 
 Tu proyecto será evaluado en base a 4 pilares:
 1. **Utilidad Real:** ¿Resuelve un problema real, por pequeño que sea?
@@ -26,7 +26,7 @@ Tu proyecto será evaluado en base a 4 pilares:
 3. **Calidad de Código:** ¿Tu código está limpio, estructurado y es fácil de leer?
 4. **Documentación:** ¿El `README.md` explica claramente qué es, cómo instalarlo y cómo usarlo?
 
-##  Cómo Participar
+## 📦 Cómo Participar
 
 1. Desarrolla tu MVP en una carpeta nueva dentro de `retos/mega-reto/[tu-usuario]/`.
 2. Incluye todo tu código y, muy importante, tu propio `README.md`.

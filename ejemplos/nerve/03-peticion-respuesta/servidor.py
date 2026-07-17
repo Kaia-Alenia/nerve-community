@@ -31,7 +31,7 @@ class ServidorCalculadora:
 
     def iniciar(self):
         self.cliente.connect("servidor_calculadora")
-        print(" Servidor Calculadora en línea y esperando peticiones...")
+        print("✅ Servidor Calculadora en línea y esperando peticiones...")
         
         self.cliente.listen(self.atender_peticion)
         

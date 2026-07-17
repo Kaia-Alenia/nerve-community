@@ -20,7 +20,7 @@ def main():
     print(f"Iniciando {nombre_nodo}...")
     cliente = NexusClient()
     cliente.connect(nombre_nodo)
-    print(f" {nombre_nodo} conectado. Escuchando el canal 'noticias_tech'...")
+    print(f"✅ {nombre_nodo} conectado. Escuchando el canal 'noticias_tech'...")
     
     cliente.listen(al_recibir_noticia)
     

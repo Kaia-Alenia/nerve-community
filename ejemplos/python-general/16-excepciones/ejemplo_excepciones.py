@@ -27,10 +27,10 @@ if __name__ == "__main__":
         print(f"\nIntentando retirar: ${intento}")
         try:
             mi_balance = procesar_retiro(mi_balance, intento)
-            print(f" Éxito. Nuevo balance: ${mi_balance}")
+            print(f"✅ Éxito. Nuevo balance: ${mi_balance}")
         except FondosInsuficientesError as e:
             # Capturamos específicamente nuestro error bancario
-            print(f" {e}")
+            print(f"❌ {e}")
         except Exception as e:
             # Por si ocurre algún otro error imprevisto
-            print(f"⚠ Error general: {e}")
+            print(f"⚠️ Error general: {e}")

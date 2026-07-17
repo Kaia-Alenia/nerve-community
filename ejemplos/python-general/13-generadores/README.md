@@ -13,7 +13,7 @@ python ejemplo_generadores.py
 ```
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #27 en GitHub: Python General 13 - Lector de Archivos Gigantes (Generadores)](https://github.com/Kaia-Alenia/nerve-community/issues/27)**
+- 👉 **[Ver Issue #27 en GitHub: Python General 13 - Lector de Archivos Gigantes (Generadores)](https://github.com/Kaia-Alenia/nerve-community/issues/27)**
 
 ## Nota para principiantes
 Cuando una función tiene `yield` en lugar de `return`, Python sabe que es un generador. Al llamarla, no ejecuta el código inmediatamente, sino que devuelve un objeto iterador. El código solo avanza hasta el siguiente `yield` cada vez que usas un ciclo `for` o la función `next()`.

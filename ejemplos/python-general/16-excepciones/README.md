@@ -13,7 +13,7 @@ python ejemplo_excepciones.py
 ```
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #30 en GitHub: Python General 16 - Validador de Edad (Excepciones Personalizadas)](https://github.com/Kaia-Alenia/nerve-community/issues/30)**
+- 👉 **[Ver Issue #30 en GitHub: Python General 16 - Validador de Edad (Excepciones Personalizadas)](https://github.com/Kaia-Alenia/nerve-community/issues/30)**
 
 ## Nota para principiantes
 Crear una excepción personalizada es extremadamente sencillo: solo creas una clase nueva, la haces heredar de `Exception`, y pones `pass` adentro. Python se encarga de que todo lo demás funcione (como pasarle un mensaje de error).

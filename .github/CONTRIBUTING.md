@@ -12,13 +12,13 @@ Asegúrate de tener lo siguiente:
 
 ---
 
-##  Paso 1: Haz un Fork
+## 🛠️ Paso 1: Haz un Fork
 Un *fork* es hacer una copia exacta de este proyecto y ponerla en tu propia cuenta de GitHub. Así puedes experimentar y romper cosas en tu copia sin afectar el repositorio original.
 Para hacerlo, ve a la página principal de este repositorio y dale clic al botón **Fork** que está arriba a la derecha.
 
 ---
 
-##  Paso 2: Clona tu fork en tu computadora
+## 💻 Paso 2: Clona tu fork en tu computadora
 Abre tu terminal (línea de comandos) y escribe el siguiente comando, cambiando `TU-USUARIO` por tu nombre de usuario en GitHub:
 
 ```bash
@@ -44,7 +44,7 @@ Si encuentras uno que te guste, deja un comentario que diga: *"¡Yo lo tomo!"* o
 
 ---
 
-##  Paso 5: Instala dependencias y prueba que todo funcione
+## 📦 Paso 5: Instala dependencias y prueba que todo funcione
 Crea un entorno virtual e instala lo necesario (si tu reto lo requiere):
 
 ```bash
@@ -101,7 +101,7 @@ Es **súper normal** que te pidamos hacer algún cambio o corrección. No te lo 
 
 ---
 
-##  Preguntas frecuentes
+## ❓ Preguntas frecuentes
 
 - **¿Y si ya alguien más resolvió el reto que quería?**
 ¡No pasa nada! A veces aceptamos múltiples soluciones si tienen enfoques distintos, o simplemente puedes elegir otro reto. Pregúntanos en el Issue si tienes dudas.

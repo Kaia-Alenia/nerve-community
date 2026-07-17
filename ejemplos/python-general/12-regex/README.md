@@ -13,7 +13,7 @@ python ejemplo_regex.py
 ```
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #26 en GitHub: Python General 12 - Validador de Emails con Regex](https://github.com/Kaia-Alenia/nerve-community/issues/26)**
+- 👉 **[Ver Issue #26 en GitHub: Python General 12 - Validador de Emails con Regex](https://github.com/Kaia-Alenia/nerve-community/issues/26)**
 
 ## Nota para principiantes
 Los strings de las expresiones regulares suelen llevar una `r` antes de las comillas (ej. `r'^\+52'`). Esto indica que es un "raw string", evitando que Python interprete caracteres como `\n` o `\t` de forma especial, dejándolos intactos para que el motor regex los procese.

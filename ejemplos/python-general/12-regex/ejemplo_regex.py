@@ -29,5 +29,5 @@ if __name__ == "__main__":
     ]
 
     for caso in casos:
-        validez = " Válido" if es_telefono_valido(caso) else " Inválido"
+        validez = "✅ Válido" if es_telefono_valido(caso) else "❌ Inválido"
         print(f"[{validez}] {caso}")

@@ -21,22 +21,22 @@ Si esta es la primera vez que escuchas sobre Git, GitHub o un "Pull Request", es
 
 ```text
 [Proyecto Original] 
-       
-        (1. Fork)
-       
-[Tu copia en GitHub] 
-                           (6. Pull Request y Revisión)
-        (2. Clone)        
-                          
-[Tu computadora]           
-        (3. Branch)       
-        (4. Escribir)     
-        (5. Commit/Push) 
+       │
+       │ (1. Fork)
+       ▼
+[Tu copia en GitHub] ──────┐
+       │                   │ (6. Pull Request y Revisión)
+       │ (2. Clone)        │
+       ▼                   │
+[Tu computadora]           │
+       │ (3. Branch)       │
+       │ (4. Escribir)     │
+       │ (5. Commit/Push) ─┘
 ```
 
 ---
 
-##  Preparativos (Sólo se hace una vez en la vida)
+## ⚙️ Preparativos (Sólo se hace una vez en la vida)
 
 1. **Instala Git:** 
    - Windows: Descarga [Git for Windows](https://gitforwindows.org/) e instálalo.
@@ -56,11 +56,11 @@ Si esta es la primera vez que escuchas sobre Git, GitHub o un "Pull Request", es
    ```
    Sigue las instrucciones: elige `GitHub.com`, luego `HTTPS`, luego `Yes` para autenticar con tus credenciales, y finalmente `Login with a web browser`. Se abrirá tu navegador para dar permiso. ¡Y listo!
 
-   *( Alternativa manual: Si no quieres instalar `gh`, debes ir a tu perfil de GitHub -> **Settings > Developer Settings > Personal access tokens > Tokens (classic)**, generar un nuevo token marcando la casilla "repo", y usar ese código larguísimo como si fuera tu contraseña cuando la terminal te lo pida al hacer `git push`).*
+   *(💡 Alternativa manual: Si no quieres instalar `gh`, debes ir a tu perfil de GitHub -> **Settings > Developer Settings > Personal access tokens > Tokens (classic)**, generar un nuevo token marcando la casilla "repo", y usar ese código larguísimo como si fuera tu contraseña cuando la terminal te lo pida al hacer `git push`).*
 
 ---
 
-## ‍ Paso a Paso Práctico
+##  Paso a Paso Práctico
 
 ### 1. El Fork
 Ve arriba a la derecha de este repositorio y presiona el botón que dice **Fork**. Esto creará una copia del proyecto en `https://github.com/TU-USUARIO/nerve-community`.
@@ -107,7 +107,7 @@ Rellena la plantilla explicando qué hiciste. ¡Envía tu Pull Request!
 
 ---
 
-##  Errores Comunes de Principiante
+## 🚨 Errores Comunes de Principiante
 
 - **"Escribí código directamente en main por accidente":** No pasa nada. No hagas `git commit` todavía. Simplemente escribe `git checkout -b nueva-rama` y tus cambios "flotarán" a la nueva rama.
 - **"Hice un commit pero me equivoqué en el mensaje":** Escribe `git commit --amend -m "Mensaje corregido"`.

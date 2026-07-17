@@ -13,7 +13,7 @@ python ejemplo_decorador.py
 ```
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #25 en GitHub: Python General 11 - Profiler de Funciones](https://github.com/Kaia-Alenia/nerve-community/issues/25)**
+- 👉 **[Ver Issue #25 en GitHub: Python General 11 - Profiler de Funciones](https://github.com/Kaia-Alenia/nerve-community/issues/25)**
 
 ## Nota para principiantes
 Recuerda siempre importar `functools` y usar `@functools.wraps(funcion)` dentro de tu decorador. Si no lo haces, la función perderá su nombre original (`__name__`) y su docstring, lo cual dificulta la depuración.

@@ -2,7 +2,7 @@
 
 En Kaia / Alenia Studios valoramos enormemente el apoyo de la comunidad. Todas las donaciones recibidas a través de GitHub Sponsors o Ko-fi para el proyecto `nerve-community` se utilizan **exclusivamente** para financiar incentivos y premios para nuestros contribuidores.
 
-##  Resumen Trimestral
+## 📊 Resumen Trimestral
 
 *(Este documento se actualizará al final de cada trimestre con el reporte de ingresos y egresos)*
 

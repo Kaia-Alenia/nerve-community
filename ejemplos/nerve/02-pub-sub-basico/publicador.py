@@ -5,7 +5,7 @@ def main():
     print("Iniciando publicador (estación de radio)...")
     cliente = NexusClient()
     cliente.connect("publicador_noticias")
-    print(" Publicador conectado al Hub.")
+    print("✅ Publicador conectado al Hub.")
     
     contador = 1
     try:

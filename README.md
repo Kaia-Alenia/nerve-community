@@ -11,7 +11,7 @@
 ##  ¿Qué es este repo?
 Este es un espacio de aprendizaje y contribución diseñado para cualquiera que quiera perderle el miedo a colaborar en proyectos Open Source. Usamos **Nerve** como excusa técnica para construir herramientas y scripts pequeños, divertidos y útiles. **No hay preguntas tontas.** Si nunca has hecho un Pull Request, o si apenas estás aprendiendo a programar en Python, este es el lugar ideal para ti. 
 
-###  ¿Por qué existe este repo?
+### 🔍 ¿Por qué existe este repo?
 Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Porque.md).
 
 ##  ¿Por qué existe Nerve?
@@ -34,9 +34,9 @@ Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Po
 | **05-logger-distribuido** | 🟡 Intermedio | Python (SQLite) | `disponible` | [#5](https://github.com/Kaia-Alenia/nerve-community/issues/5) |
 | **06-puente-de-progreso-gif** | 🟡 Intermedio | Python (Pillow) | `disponible` | [#6](https://github.com/Kaia-Alenia/nerve-community/issues/6) |
 | **07-bot-discord-nerve** | 🟡 Intermedio | Python (discord.py) | `disponible` | [#7](https://github.com/Kaia-Alenia/nerve-community/issues/7) |
-| **08-puente-http** |  Avanzado | Python (FastAPI) | `disponible` | [#8](https://github.com/Kaia-Alenia/nerve-community/issues/8) |
-| **09-probador-de-carga** |  Avanzado | Python (Concurrencia) | `disponible` | [#9](https://github.com/Kaia-Alenia/nerve-community/issues/9) |
-| **10-cliente-nuevo-lenguaje** |  Avanzado | Dart / Kotlin / Go / etc. | `disponible` | [#10](https://github.com/Kaia-Alenia/nerve-community/issues/10) |
+| **08-puente-http** | 🔴 Avanzado | Python (FastAPI) | `disponible` | [#8](https://github.com/Kaia-Alenia/nerve-community/issues/8) |
+| **09-probador-de-carga** | 🔴 Avanzado | Python (Concurrencia) | `disponible` | [#9](https://github.com/Kaia-Alenia/nerve-community/issues/9) |
+| **10-cliente-nuevo-lenguaje** | 🔴 Avanzado | Dart / Kotlin / Go / etc. | `disponible` | [#10](https://github.com/Kaia-Alenia/nerve-community/issues/10) |
 
 ###  Retos de Python General
 | Reto | Nivel | Tecnología principal | Estado | Enlace al Issue |
@@ -60,7 +60,7 @@ Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Po
 | **17-lector-de-configuraciones** | 🟡 Intermedio | Python | `disponible` | [#31](https://github.com/Kaia-Alenia/nerve-community/issues/31) |
 | **18-inventario-de-tienda** | 🟡 Intermedio | Python | `disponible` | [#32](https://github.com/Kaia-Alenia/nerve-community/issues/32) |
 
->  **¿Eres mantenedor/a o quieres ver el texto original de los retos?**
+> 📝 **¿Eres mantenedor/a o quieres ver el texto original de los retos?**
 > Consulta las plantillas de los issues en [RETOS_ISSUES.md](docs/RETOS_ISSUES.md) (para los retos Rompehielo y Core) y [PYTHON_GENERAL_ISSUES.md](docs/PYTHON_GENERAL_ISSUES.md) (para los retos de Python General).
 
 ##  ¿Nunca has hecho un Pull Request?
@@ -81,11 +81,11 @@ La contribución más destacada del trimestre recibe **4 meses gratis de Google 
 ##  Financiamiento y Transparencia
 Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financiar los premios de la comunidad (suscripciones, reconocimientos, y eventualmente merch). Cada trimestre publicaremos un resumen transparente de cómo se usó lo recaudado en nuestro archivo [TRANSPARENCIA.md](TRANSPARENCIA.md).
 
-##  Únete a la comunidad
+## 💬 Únete a la comunidad
 (https://discord.gg/xFptGAr7t)
 
 ##  Contribuidores
 ¡Gracias a todas las personas que hacen esto posible! Cada contribución cuenta.
 
-##  Licencia
+## 📄 Licencia
 Este repositorio, al igual que Nerve, está licenciado bajo **GNU GPL v3**. Lee el archivo `LICENSE` para más detalles.

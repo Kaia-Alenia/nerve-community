@@ -16,7 +16,7 @@ def main():
     
     # Nos conectamos como "receptor_01"
     cliente.connect("receptor_01")
-    print(" Receptor conectado. Esperando mensajes...")
+    print("✅ Receptor conectado. Esperando mensajes...")
     
     # Registramos la función que se llamará al recibir mensajes
     cliente.listen(procesar_mensaje)

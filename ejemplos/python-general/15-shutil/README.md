@@ -14,7 +14,7 @@ python ejemplo_shutil.py
 Al finalizar, verás un nuevo archivo llamado `mi_backup.zip`.
 
 ## ¿Qué retos usan esta base?
--  **[Ver Issue #29 en GitHub: Python General 15 - Herramienta de Backup de Archivos](https://github.com/Kaia-Alenia/nerve-community/issues/29)**
+- 👉 **[Ver Issue #29 en GitHub: Python General 15 - Herramienta de Backup de Archivos](https://github.com/Kaia-Alenia/nerve-community/issues/29)**
 
 ## Nota para principiantes
 El módulo `shutil` tiene muchas funciones útiles como `shutil.copy()` y `shutil.move()`. Son las equivalentes a usar los comandos `cp` y `mv` en una terminal de Linux o Mac, pero directamente desde Python.

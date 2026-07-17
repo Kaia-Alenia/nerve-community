@@ -9,7 +9,7 @@ def log_ejecucion(funcion):
     def wrapper(*args, **kwargs):
         print(f" Iniciando ejecución de '{funcion.__name__}'...")
         resultado = funcion(*args, **kwargs)
-        print(f"⏹ Finalizó '{funcion.__name__}'.")
+        print(f" Finalizó '{funcion.__name__}'.")
         return resultado
     return wrapper
 
