@@ -1,13 +1,13 @@
-def convertir_celsius_a_fahrenheit(celsius: float) -> float:
+def convertir_dolares_a_euros(dolares: float) -> float:
     """
     Función pura: recibe un valor, devuelve un valor modificado.
     No imprime nada, no pide inputs.
     """
-    return (celsius * 9/5) + 32
+    return dolares * 0.85  # tasa de ejemplo, no representa el valor real de mercado
 
 def mostrar_menu():
     print("\n--- MENÚ DE EJEMPLO ---")
-    print("1. Convertir Celsius a Fahrenheit")
+    print("1. Convertir Dólares a Euros")
     print("2. Salir")
     return input("Elige una opción: ")
 
@@ -17,10 +17,10 @@ def main():
         
         if opcion == "1":
             try:
-                c = float(input("Ingresa grados Celsius: "))
+                usd = float(input("Ingresa cantidad en Dólares (USD): "))
                 # Llamamos a la función pura
-                resultado = convertir_celsius_a_fahrenheit(c)
-                print(f"{c} °C equivalen a {resultado:.2f} °F.")
+                resultado = convertir_dolares_a_euros(usd)
+                print(f"${usd} USD equivalen a €{resultado:.2f} EUR.")
             except ValueError:
                 print("Error: Ingresa un número válido.")
         elif opcion == "2":

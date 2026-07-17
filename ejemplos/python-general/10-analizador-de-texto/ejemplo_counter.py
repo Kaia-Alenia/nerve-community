@@ -1,22 +1,14 @@
 from collections import Counter
-import re
 
-texto_ejemplo = "El perro corre. El gato salta. El perro duerme."
+# 1. Lista estática de elementos (ej. frutas)
+frutas = ["manzana", "pera", "manzana", "naranja", "pera", "manzana", "platano"]
 
-# 1. Limpiar el texto de puntuación y pasar todo a minúsculas
-# re.sub reemplaza cualquier cosa que no sea letra o espacio por nada ('')
-texto_limpio = re.sub(r'[^\w\s]', '', texto_ejemplo).lower()
-print(f"Texto limpio: {texto_limpio}")
+# 2. Usar Counter para contar cuántas veces aparece cada elemento en la lista
+conteo = Counter(frutas)
 
-# 2. Dividir el texto en una lista de palabras
-palabras = texto_limpio.split()
-
-# 3. Usar Counter para contar cuántas veces aparece cada elemento en la lista
-conteo = Counter(palabras)
-
-# 4. Obtener los 2 elementos más comunes
+# 3. Obtener los 2 elementos más comunes
 top_2 = conteo.most_common(2)
 
-print("\nResultados del conteo:")
-for palabra, frecuencia in top_2:
-    print(f"- La palabra '{palabra}' aparece {frecuencia} vez/veces.")
+print("Resultados del conteo de frutas:")
+for fruta, frecuencia in top_2:
+    print(f"- La fruta '{fruta}' aparece {frecuencia} vez/veces.")
