@@ -31,6 +31,7 @@ from pathlib import Path
 # Solo se importa si el archivo es .yaml — no es obligatorio instalarlo
 try:
     import yaml
+
     YAML_DISPONIBLE = True
 except ImportError:
     YAML_DISPONIBLE = False

@@ -38,16 +38,19 @@ class EdadInvalidaError(Exception):
     Clase base para todos los errores de edad.
     Heredar de ella permite capturar TODOS los errores de edad con un solo except.
     """
+
     pass
 
 
 class EdadNegativaError(EdadInvalidaError):
     """Se lanza cuando la edad es un número negativo."""
+
     pass
 
 
 class EdadExcesivaError(EdadInvalidaError):
     """Se lanza cuando la edad supera un máximo razonable."""
+
     MAXIMO = 150
 
     def __init__(self, edad_recibida: int):
@@ -60,6 +63,7 @@ class EdadExcesivaError(EdadInvalidaError):
 
 class EdadNoNumericaError(EdadInvalidaError):
     """Se lanza cuando el input no es un número."""
+
     pass
 
 
@@ -73,14 +77,10 @@ def validar_edad(entrada: str) -> int:
     try:
         edad = int(entrada)
     except ValueError:
-        raise EdadNoNumericaError(
-            f"'{entrada}' no es un número entero válido."
-        )
+        raise EdadNoNumericaError(f"'{entrada}' no es un número entero válido.")
 
     if edad < 0:
-        raise EdadNegativaError(
-            f"La edad no puede ser negativa. Recibido: {edad}"
-        )
+        raise EdadNegativaError(f"La edad no puede ser negativa. Recibido: {edad}")
 
     if edad > EdadExcesivaError.MAXIMO:
         raise EdadExcesivaError(edad)
@@ -118,13 +118,13 @@ if __name__ == "__main__":
     print("=== Demo de excepciones personalizadas ===")
 
     casos = [
-        ("María", "28"),       # Válido
-        ("Carlos", "-5"),      # EdadNegativaError
-        ("Luis", "abc"),       # EdadNoNumericaError
-        ("Ana", "200"),        # EdadExcesivaError
-        ("Sofía", "0"),        # Válido (recién nacida)
-        ("Pedro", "150"),      # EdadExcesivaError (exactamente el límite)
-        ("Juan", "3.5"),       # EdadNoNumericaError (float no es int)
+        ("María", "28"),  # Válido
+        ("Carlos", "-5"),  # EdadNegativaError
+        ("Luis", "abc"),  # EdadNoNumericaError
+        ("Ana", "200"),  # EdadExcesivaError
+        ("Sofía", "0"),  # Válido (recién nacida)
+        ("Pedro", "150"),  # EdadExcesivaError (exactamente el límite)
+        ("Juan", "3.5"),  # EdadNoNumericaError (float no es int)
     ]
 
     for nombre, edad_str in casos:

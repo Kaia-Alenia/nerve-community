@@ -17,19 +17,19 @@ Para tu reto (inventario de tienda):
 Glosario:
   @property          — convierte un método en un "atributo de solo lectura"
                        se accede sin paréntesis: objeto.precio (no objeto.precio())
-  
+
   @nombre.setter     — complemento de @property que permite asignar con validación
                        se activa cuando escribes: objeto.precio = 100
                        Si no defines setter, el atributo es de solo lectura.
-  
+
   __repr__(self)     — devuelve una representación oficial del objeto.
                        Se muestra en el REPL de Python, en listas, en f-strings, etc.
                        Convención: debe devolver algo que se pueda evaluar de nuevo.
                        Ejemplo: "Producto(nombre='Leche', precio=25.0, stock=50)"
-  
+
   __str__(self)      — representación amigable para el usuario (print())
                        Si no está definido, Python usa __repr__
-  
+
   Atributos privados por convención:
     _nombre   — convención: no tocar desde afuera (pero Python no lo impide)
     __nombre  — name mangling: Python lo renombra a _Clase__nombre internamente
@@ -65,7 +65,9 @@ class CuentaBancaria:
         Valida el valor ANTES de guardarlo.
         """
         if not isinstance(nuevo_valor, (int, float)):
-            raise TypeError(f"El saldo debe ser un número, no {type(nuevo_valor).__name__}")
+            raise TypeError(
+                f"El saldo debe ser un número, no {type(nuevo_valor).__name__}"
+            )
         if nuevo_valor < 0:
             raise ValueError(f"El saldo no puede ser negativo: {nuevo_valor}")
         self._saldo = float(nuevo_valor)
@@ -109,7 +111,7 @@ if __name__ == "__main__":
     cuenta = CuentaBancaria("Kaia", saldo_inicial=1000.0)
 
     print(f"Cuenta creada: {cuenta}")  # usa __str__
-    print(f"repr: {repr(cuenta)}\n")   # usa __repr__
+    print(f"repr: {repr(cuenta)}\n")  # usa __repr__
 
     # Acceso a property (sin paréntesis)
     print(f"Saldo actual: ${cuenta.saldo}")

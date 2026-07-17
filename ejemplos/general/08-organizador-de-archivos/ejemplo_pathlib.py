@@ -94,7 +94,9 @@ def organizar_carpeta(ruta_carpeta: str, dry_run: bool = False):
 
         movidos += 1
 
-    print(f"\nResumen: {movidos} archivo(s) {'a mover' if dry_run else 'movidos'}, {ignorados} ignorados.")
+    print(
+        f"\nResumen: {movidos} archivo(s) {'a mover' if dry_run else 'movidos'}, {ignorados} ignorados."
+    )
 
 
 if __name__ == "__main__":
@@ -104,8 +106,12 @@ if __name__ == "__main__":
     # Crear carpeta temporal con archivos de ejemplo para demostrar
     with tempfile.TemporaryDirectory() as tmp:
         archivos_prueba = [
-            "foto_verano.jpg", "presentacion.pdf", "notas.txt",
-            "cancion.mp3", "script_util.py", "archivo_raro.xyz"
+            "foto_verano.jpg",
+            "presentacion.pdf",
+            "notas.txt",
+            "cancion.mp3",
+            "script_util.py",
+            "archivo_raro.xyz",
         ]
         for nombre in archivos_prueba:
             (Path(tmp) / nombre).touch()

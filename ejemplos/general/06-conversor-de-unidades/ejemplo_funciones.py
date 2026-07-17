@@ -15,7 +15,7 @@ Glosario de type hints:
   def funcion(param: tipo) -> tipo_retorno:
     param: tipo   — indica qué tipo de dato espera el parámetro
     -> tipo       — indica qué tipo de dato devuelve la función
-  
+
   Son opcionales en Python, pero sirven como documentación en vivo y
   ayudan a los editores a detectar errores antes de correr el código.
 
@@ -25,10 +25,10 @@ Glosario de type hints:
     def imprimir(msg: str) -> None:           # devuelve None (no retorna nada)
 """
 
-
 # --- Funciones puras: solo reciben datos y devuelven datos ---
 # No imprimen nada, no llaman a input(), no dependen de variables globales.
 # Son fáciles de probar: si le das el mismo input, SIEMPRE dan el mismo output.
+
 
 def km_a_millas(km: float) -> float:
     """Convierte kilómetros a millas."""

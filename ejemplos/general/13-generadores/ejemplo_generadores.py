@@ -15,17 +15,17 @@ Glosario:
   yield         — como return, pero pausa la función en vez de terminarla.
                   La próxima vez que se pida un valor, continúa desde donde pausó.
                   Convierte automáticamente la función en un generador.
-  
+
   generador     — objeto que produce valores uno a uno, bajo demanda.
                   No calcula todos los valores de una vez (perezoso = lazy).
                   Ventaja: si el archivo tiene 10 GB, solo una línea ocupa
                   memoria a la vez.
-  
+
   next(gen)     — pide el siguiente valor del generador. Lanza StopIteration
                   cuando se agotan los valores.
-  
+
   for x in gen  — forma más cómoda de consumir un generador (maneja StopIteration)
-  
+
   Diferencia clave:
     Con lista:   lineas = archivo.readlines()  → carga TODO en RAM
     Con yield:   for linea in leer_lineas(archivo) → una línea a la vez en RAM

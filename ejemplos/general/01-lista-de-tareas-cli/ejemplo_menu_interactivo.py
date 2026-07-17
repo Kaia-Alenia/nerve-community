@@ -10,14 +10,14 @@ Qué enseña este ejemplo:
   - Cómo manejar el caso en que el archivo aún no existe
 
 Para tu reto (lista de tareas):
-  Aplica el mismo patrón de loop + input() + guardado JSON, pero en vez de 
+  Aplica el mismo patrón de loop + input() + guardado JSON, pero en vez de
   contactos (nombre/teléfono) trabajarás con tareas (texto/completado).
   - Tu "agregar" será para nuevas tareas.
   - Tu "actualizar" será tu "marcar como completada".
   - Tu "eliminar" funcionará igual que eliminar un contacto.
 
 Glosario de términos "raros":
-  with open(...) as f — Abre un archivo de forma segura. "f" es solo una variable 
+  with open(...) as f — Abre un archivo de forma segura. "f" es solo una variable
                         corta para "file" (archivo). Si hay error, cierra el archivo solo.
   "r" o "w"           — Modos al abrir un archivo: "r" (read = leer), "w" (write = escribir).
   encoding="utf-8"    — Asegura que los acentos y caracteres especiales (ñ, á) se guarden bien.

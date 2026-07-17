@@ -17,17 +17,17 @@ Glosario:
     → Comprime 'carpeta' en un archivo 'nombre.formato'
     → Formatos disponibles: "zip", "tar", "gztar" (tar.gz), "bztar", "xztar"
     → Devuelve la ruta del archivo creado
-  
+
   shutil.copy2(origen, destino)
     → Copia un archivo preservando metadatos (fecha de modificación, permisos)
     → shutil.copy() solo copia contenido; copy2() también copia metadatos
-  
+
   pathlib.rglob("*.ext")
     → Busca archivos recursivamente en TODAS las subcarpetas
     → rglob("*") → todos los archivos y carpetas
     → rglob("*.py") → solo archivos .py en cualquier profundidad
     → glob("*.py") → solo en la carpeta actual (no recursivo)
-  
+
   datetime.now().strftime("%Y-%m-%d")
     → Devuelve la fecha de hoy como string: "2025-07-17"
     → Útil para nombrar backups: "backup_2025-07-17.zip"
@@ -61,9 +61,9 @@ def hacer_backup_completo(carpeta_origen: str, carpeta_destino: str) -> str:
 
     # shutil.make_archive devuelve la ruta del archivo creado (con extensión)
     archivo_creado = shutil.make_archive(
-        str(ruta_salida),   # nombre de salida (sin extensión)
-        "zip",              # formato de compresión
-        str(origen),        # carpeta a comprimir
+        str(ruta_salida),  # nombre de salida (sin extensión)
+        "zip",  # formato de compresión
+        str(origen),  # carpeta a comprimir
     )
 
     tamaño_kb = Path(archivo_creado).stat().st_size / 1024

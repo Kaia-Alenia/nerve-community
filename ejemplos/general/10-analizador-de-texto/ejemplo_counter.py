@@ -31,11 +31,46 @@ from collections import Counter
 
 # Palabras vacías en español (no aportan significado, no queremos contarlas)
 STOPWORDS = {
-    "el", "la", "los", "las", "un", "una", "unos", "unas",
-    "de", "en", "a", "y", "o", "que", "con", "por", "para",
-    "del", "al", "se", "es", "son", "su", "sus", "lo", "le",
-    "más", "pero", "como", "si", "no", "ya", "fue", "era",
-    "hay", "ser", "me", "te", "nos", "les",
+    "el",
+    "la",
+    "los",
+    "las",
+    "un",
+    "una",
+    "unos",
+    "unas",
+    "de",
+    "en",
+    "a",
+    "y",
+    "o",
+    "que",
+    "con",
+    "por",
+    "para",
+    "del",
+    "al",
+    "se",
+    "es",
+    "son",
+    "su",
+    "sus",
+    "lo",
+    "le",
+    "más",
+    "pero",
+    "como",
+    "si",
+    "no",
+    "ya",
+    "fue",
+    "era",
+    "hay",
+    "ser",
+    "me",
+    "te",
+    "nos",
+    "les",
 }
 
 
@@ -58,8 +93,7 @@ def analizar_texto(texto: str) -> dict:
 
     # 2. Filtrar palabras vacías y palabras de 1 carácter
     palabras_validas = [
-        p for p in palabras_limpias
-        if p and len(p) > 1 and p not in STOPWORDS
+        p for p in palabras_limpias if p and len(p) > 1 and p not in STOPWORDS
     ]
 
     # 3. Contar frecuencias con Counter

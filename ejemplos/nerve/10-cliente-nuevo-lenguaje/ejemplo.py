@@ -7,7 +7,7 @@ Qué enseña este ejemplo:
   - Esperar y decodificar la respuesta del servidor.
 
 Para tu reto (Nuevo Cliente Nerve):
-  En un cliente Nerve real, querrás mantener este socket abierto (persistencia) 
+  En un cliente Nerve real, querrás mantener este socket abierto (persistencia)
   y ejecutar un bucle (loop) en un hilo (thread) separado para estar siempre
   escuchando los nuevos mensajes que el Hub envía, disparando callbacks o
   eventos a tu aplicación.
@@ -15,6 +15,7 @@ Para tu reto (Nuevo Cliente Nerve):
 
 import socket
 import json
+
 
 def main():
     host = "127.0.0.1"
@@ -33,7 +34,7 @@ def main():
             payload = {
                 "tipo": "publicar",
                 "canal": "test",
-                "contenido": "Hola desde el nuevo cliente Python!"
+                "contenido": "Hola desde el nuevo cliente Python!",
             }
 
             # 4. Enviar los datos. Deben convertirse de Diccionario -> JSON String -> Bytes
@@ -54,6 +55,7 @@ def main():
             print("❌ No se pudo conectar. ¿Está el servidor encendido?")
         except Exception as e:
             print(f"❌ Error inesperado: {e}")
+
 
 if __name__ == "__main__":
     main()
