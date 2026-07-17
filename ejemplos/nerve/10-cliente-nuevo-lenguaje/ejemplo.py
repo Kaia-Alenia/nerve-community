@@ -1,17 +1,17 @@
-/**
- * Ejemplo: Cliente de Socket TCP en Python
- * 
- * Qué enseña este ejemplo:
- *   - Conectarse a un servidor a través de una dirección IP y un puerto usando sockets.
- *   - Codificar un JSON a bytes y enviarlo.
- *   - Esperar y decodificar la respuesta del servidor.
- * 
- * Para tu reto (Nuevo Cliente Nerve):
- *   En un cliente Nerve real, querrás mantener este socket abierto (persistencia) 
- *   y ejecutar un bucle (loop) en un hilo (thread) separado para estar siempre
- *   escuchando los nuevos mensajes que el Hub envía, disparando callbacks o
- *   eventos a tu aplicación.
- */
+"""
+Ejemplo: Cliente de Socket TCP en Python
+
+Qué enseña este ejemplo:
+  - Conectarse a un servidor a través de una dirección IP y un puerto usando sockets.
+  - Codificar un JSON a bytes y enviarlo.
+  - Esperar y decodificar la respuesta del servidor.
+
+Para tu reto (Nuevo Cliente Nerve):
+  En un cliente Nerve real, querrás mantener este socket abierto (persistencia) 
+  y ejecutar un bucle (loop) en un hilo (thread) separado para estar siempre
+  escuchando los nuevos mensajes que el Hub envía, disparando callbacks o
+  eventos a tu aplicación.
+"""
 
 import socket
 import json
