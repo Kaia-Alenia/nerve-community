@@ -1,15 +1,15 @@
-/**
- * Ejemplo: Concurrencia con asyncio en Python
- * 
- * Qué enseña este ejemplo:
- *   - Usar `asyncio.gather` para lanzar múltiples tareas al mismo tiempo.
- *   - Medir cuánto tarda un bloque de código en ejecutarse usando `time.time()`.
- * 
- * Para tu reto (Probador de Carga Nerve):
- *   Reemplazarás `simular_peticion()` con `cliente.publicar(...)` o 
- *   una llamada remota de Nerve para bombardear la red y medir el 
- *   rendimiento total (mensajes por segundo).
- */
+"""
+Ejemplo: Concurrencia con asyncio en Python
+
+Qué enseña este ejemplo:
+  - Usar `asyncio.gather` para lanzar múltiples tareas al mismo tiempo.
+  - Medir cuánto tarda un bloque de código en ejecutarse usando `time.time()`.
+
+Para tu reto (Probador de Carga Nerve):
+  Reemplazarás `simular_peticion()` con `cliente.publicar(...)` o
+  una llamada remota de Nerve para bombardear la red y medir el
+  rendimiento total (mensajes por segundo).
+"""
 
 import asyncio
 import time

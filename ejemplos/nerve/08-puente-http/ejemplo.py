@@ -1,15 +1,15 @@
-/**
- * Ejemplo: Servidor HTTP con FastAPI
- * 
- * Qué enseña este ejemplo:
- *   - Crear una aplicación básica de FastAPI.
- *   - Definir un modelo de datos (Pydantic) para recibir JSON.
- *   - Crear un endpoint (ruta) POST que lea esos datos.
- * 
- * Para tu reto (Puente HTTP para Nerve):
- *   Cuando el endpoint reciba los datos, deberás usar el cliente Nerve (app.state.nerve)
- *   para retransmitir la información hacia el hub de Nerve.
- */
+"""
+Ejemplo: Servidor HTTP con FastAPI
+
+Qué enseña este ejemplo:
+  - Crear una aplicación básica de FastAPI.
+  - Definir un modelo de datos (Pydantic) para recibir JSON.
+  - Crear un endpoint (ruta) POST que lea esos datos.
+
+Para tu reto (Puente HTTP para Nerve):
+  Cuando el endpoint reciba los datos, deberás usar el cliente Nerve (app.state.nerve)
+  para retransmitir la información hacia el hub de Nerve.
+"""
 
 from fastapi import FastAPI
 from pydantic import BaseModel
