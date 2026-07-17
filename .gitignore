@@ -5,6 +5,7 @@ venv/
 
 # Compilados de Python
 __pycache__/
+*.pyc
 *.py[cod]
 *.so
 
@@ -19,6 +20,8 @@ crear-issues-nerve-community.sh
 setup_github.sh
 crear-issues-python-general.sh
 discord-bot/data/
-discord-bot/*.db
+*.db
+*.sqlite3
+discord-bot/backups/
 discord-bot/
 Cosas tontas que use/
