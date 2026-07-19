@@ -65,7 +65,7 @@ Todo lo que necesitas saber sobre el control de versiones y la plataforma GitHub
 
 ---
 
-> 💡 **IMPORTANTE:** No tienes que memorizar todo esto de golpe. Con que recuerdes el ciclo básico — **fork → clone → branch → commit → push → PR** — ya puedes hacer tu primera contribución. ¡El resto lo aprenderás con la práctica! 🚀
+> 💡 **IMPORTANTE:** No tienes que memorizar todo esto de golpe. Con que recuerdes el ciclo básico — **fork → clone → branch → commit → push → PR** — ya puedes hacer tu primera contribución. ¡El resto lo aprenderás con la práctica!
 
 ---
 

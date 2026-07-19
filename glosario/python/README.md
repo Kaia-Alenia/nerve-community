@@ -1,4 +1,4 @@
-# 🐍 Glosario de Python
+# Glosario de Python
 
 Índice de todos los términos de Python usados en los retos de nerve-community.
 

@@ -1,4 +1,4 @@
-# 🐹 Glosario de Go
+# Glosario de Go
 
 Índice de todos los términos de Go usados en los retos de nerve-community.
 

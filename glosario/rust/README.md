@@ -1,4 +1,4 @@
-# 🦀 Glosario de Rust
+# Glosario de Rust
 
 Índice de todos los términos de Rust usados en los retos de nerve-community.
 

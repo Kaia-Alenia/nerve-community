@@ -1,4 +1,4 @@
-# 🟨 Glosario de JavaScript
+# Glosario de JavaScript
 
 Índice de todos los términos de JavaScript usados en los retos de nerve-community.
 

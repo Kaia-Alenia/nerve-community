@@ -63,7 +63,7 @@ Estos son los conceptos de redes y comunicación que usa **Nerve** para conectar
 
 ---
 
-> 💡 **Dato clave sobre Nerve:** Nerve abstrae toda esta complejidad. Tú no tienes que saber de sockets para usar Nerve, pero saber cómo funcionan te ayuda a entender *por qué* Nerve existe y qué problema resuelve. Los retos de nivel Avanzado (08, 09, 10) sí requieren entender estos conceptos. 🚀
+> 💡 **Dato clave sobre Nerve:** Nerve abstrae toda esta complejidad. Tú no tienes que saber de sockets para usar Nerve, pero saber cómo funcionan te ayuda a entender *por qué* Nerve existe y qué problema resuelve. Los retos de nivel Avanzado (08, 09, 10) sí requieren entender estos conceptos.
 
 ---
 

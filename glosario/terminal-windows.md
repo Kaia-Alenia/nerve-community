@@ -112,7 +112,7 @@ WSL te permite tener una distribución completa de Linux (Ubuntu, Debian, etc.) 
 > 1. Instala **Git for Windows** → [gitforwindows.org](https://gitforwindows.org/)
 > 2. Instala **Python 3** → [python.org/downloads](https://www.python.org/downloads/) (marca "Add to PATH")
 > 3. Usa **Git Bash** como tu terminal principal
-> 4. Con eso, todos los comandos de las guías del repo funcionarán igual en tu Windows 🚀
+> 4. Con eso, todos los comandos de las guías del repo funcionarán igual en tu Windows
 
 ---
 

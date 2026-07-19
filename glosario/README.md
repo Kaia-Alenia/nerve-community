@@ -16,10 +16,10 @@ Bienvenido al glosario completo. Aquí encontrarás explicaciones claras de **to
 
 | Lenguaje | Carpeta |
 | :--- | :--- |
-| 🐍 Python | [glosario/python/](python/README.md) |
-| 🐹 Go | [glosario/go/](go/README.md) |
-| 🦀 Rust | [glosario/rust/](rust/README.md) |
-| 🟨 JavaScript | [glosario/javascript/](javascript/README.md) |
+| Python | [glosario/python/](python/README.md) |
+| Go | [glosario/go/](go/README.md) |
+| Rust | [glosario/rust/](rust/README.md) |
+| JavaScript | [glosario/javascript/](javascript/README.md) |
 
 ---
 
