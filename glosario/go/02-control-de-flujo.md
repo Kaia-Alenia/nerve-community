@@ -1,4 +1,4 @@
-# 🐹 02 - Control de flujo
+# 02 - Control de flujo
 
 ### `if / else`
 

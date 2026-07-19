@@ -1,4 +1,4 @@
-# 🦀 08 - POO básica (Structs y Ownership)
+# 08 - POO básica (Structs y Ownership)
 
 ### `struct` e `impl`
 

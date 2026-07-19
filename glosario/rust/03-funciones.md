@@ -1,4 +1,4 @@
-# 🦀 03 - Funciones
+# 03 - Funciones
 
 ### `fn`
 

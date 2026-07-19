@@ -1,4 +1,4 @@
-# 🟨 08 - POO básica
+# 08 - POO básica
 
 ### `class` y `constructor`
 

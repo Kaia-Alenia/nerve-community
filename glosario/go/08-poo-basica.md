@@ -1,4 +1,4 @@
-# 🐹 08 - POO básica (Structs e Interfaces)
+# 08 - POO básica (Structs e Interfaces)
 
 ### `struct`
 

@@ -1,4 +1,4 @@
-# 🟨 06 - Manejo de errores
+# 06 - Manejo de errores
 
 ### `try / catch / finally`
 

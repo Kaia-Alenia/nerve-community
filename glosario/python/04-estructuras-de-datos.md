@@ -1,4 +1,4 @@
-# 🐍 04 - Estructuras de datos
+# 04 - Estructuras de datos
 
 ### `listas`
 

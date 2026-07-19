@@ -1,4 +1,4 @@
-# 🦀 01 - Fundamentos
+# 01 - Fundamentos
 
 ### `let` y `mut`
 

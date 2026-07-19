@@ -1,4 +1,4 @@
-# 🟨 09 - Asincronía
+# 09 - Asincronía
 
 ### `Event Loop (Bucle de Eventos)`
 

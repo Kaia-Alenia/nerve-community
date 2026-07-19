@@ -1,4 +1,4 @@
-# 🐹 09 - Concurrencia
+# 09 - Concurrencia
 
 ### `goroutine`
 

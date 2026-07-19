@@ -1,4 +1,4 @@
-# 🦀 07 - Archivos y entrada/salida
+# 07 - Archivos y entrada/salida
 
 ### `std::fs::File`
 

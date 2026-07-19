@@ -1,4 +1,4 @@
-# 🐍 05 - Módulos y librerías
+# 05 - Módulos y librerías
 
 ### `import / from...import`
 
