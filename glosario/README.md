@@ -9,7 +9,8 @@ Bienvenido al glosario completo. Aquí encontrarás explicaciones claras de **to
 | [🔧 Git y GitHub](git-github.md) | `git clone`, `fork`, `commit`, `push`, `pull`, `branch`, `PR`, `merge`, `rebase`... |
 | [🐍 Python](python.md) | `print()`, `input()`, `import`, `if/else`, `for`, `while`, `def`, librerías, módulos... |
 | [🌐 Redes y Sockets](redes-sockets.md) | `socket`, `IPC`, `Unix Socket`, `TCP`, `servidor`, `cliente`, `puerto`... |
-| [⌨️ Terminal y Linux](terminal-linux.md) | `cd`, `ls`, `nano`, `pip`, `pwd`, `chmod`, Termux, bash... |
+| [⌨️ Terminal: Linux y macOS](terminal-linux.md) | `pwd`, `ls`, `nano`, `chmod`, `apt`, Termux, `pkg`, variables de entorno... |
+| [🪟 Terminal: Windows](terminal-windows.md) | CMD, PowerShell, Git Bash, WSL, `dir`, `python`, instalar Python en Windows... |
 | [🛠️ Conceptos de Software](conceptos-software.md) | `bug`, `refactoring`, `dependencias`, `librería estándar`, `CLI`, `API`, `CSV`, `JSON`... |
 
 ---

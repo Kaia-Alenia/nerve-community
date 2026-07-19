@@ -9,7 +9,8 @@ Bienvenido al glosario. Hemos separado los términos en secciones temáticas par
 | [🔧 Git y GitHub](glosario/git-github.md) | `git clone`, `fork`, `commit`, `push`, `pull`, `branch`, `PR`, `merge`, `rebase`, `squash`, `upstream`, GitHub Actions... |
 | [🐍 Python](glosario/python.md) | `print()`, `input()`, `import`, `if/else`, `for`, `while`, `def`, librerías estándar, `requests`, `black`, `pip`, `venv`... |
 | [🌐 Redes y Sockets](glosario/redes-sockets.md) | `socket`, `IPC`, `Unix Socket`, `TCP`, `servidor`, `cliente`, `puerto`, `API`, `REST`, `JSON`, `FastAPI`, `WebSocket`... |
-| [⌨️ Terminal y Linux](glosario/terminal-linux.md) | `cd`, `ls`, `nano`, `pip`, `pwd`, `chmod`, Termux, `pkg`, `.env`, `.gitignore`, variables de entorno... |
+| [⌨️ Terminal: Linux y macOS](glosario/terminal-linux.md) | `pwd`, `ls`, `nano`, `chmod`, `apt`, Termux, `pkg`, variables de entorno... |
+| [🪟 Terminal: Windows](glosario/terminal-windows.md) | CMD, PowerShell, Git Bash, WSL, `dir`, `python`, instalar Python en Windows... |
 | [🛠️ Conceptos de Software](glosario/conceptos-software.md) | `bug`, `refactoring`, `CLI`, `API`, `CSV`, `Markdown`, `linter`, `CI/CD`, `dry-run`, `hardcoded`, ecosistema Alenia/Nerve... |
 
 ---
