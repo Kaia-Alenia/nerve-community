@@ -20,6 +20,10 @@ Si eres nuevo y palabras como *fork*, *commit*, *push* o *pull request* te suena
 ##  ¿Por qué existe Nerve?
 [alenia-nerve](https://github.com/Kaia-Alenia/alenia-nerve) es un sistema de comunicación entre procesos (IPC) local, multiplataforma y offline-first, que te permite conectar diferentes scripts (incluso en diferentes lenguajes) de forma súper sencilla usando sockets locales (Unix Sockets en Linux/macOS, TCP en Windows).
 
+## 💬 Únete a la comunidad
+Si tienes dudas, quieres hablar con otros contribuidores o simplemente quieres saludar, ¡estamos en Discord!
+👉 **[Únete al servidor de Nerve Community aquí](https://discord.gg/xFptGAr7t)**
+
 ##  Retos Disponibles
 
 ###  Reto Rompehielo
@@ -89,9 +93,6 @@ La contribución más destacada del trimestre recibe **4 meses gratis de Google 
 
 ##  Financiamiento y Transparencia
 Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financiar los premios de la comunidad (suscripciones, reconocimientos, y eventualmente merch). Cada trimestre publicaremos un resumen transparente de cómo se usó lo recaudado en nuestro archivo [TRANSPARENCIA.md](TRANSPARENCIA.md).
-
-## 💬 Únete a la comunidad
-(https://discord.gg/xFptGAr7t)
 
 ## Cumpliendo Retos
 ¡Gracias a todas las personas que hacen esto posible! Cada contribución cuenta.
