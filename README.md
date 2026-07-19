@@ -15,7 +15,7 @@ Este es un espacio de aprendizaje y contribución diseñado para cualquiera que 
 Creemos en ser honestos sobre esto. [Lee la explicación completa aquí](docs/Porque.md).
 
 ### 📚 ¿No entiendes algún término?
-Si eres nuevo y palabras como *fork*, *commit*, *push* o *pull request* te suenan raro, ¡no te preocupes! Preparamos un **[Glosario para Principiantes](GLOSARIO.md)** donde explicamos cada término (qué es, para qué sirve y un ejemplo) de forma súper sencilla.
+Si eres nuevo y palabras como *fork*, *commit*, *push* o *pull request* te suenan raro, ¡no te preocupes! Preparamos un **[Glosario para Principiantes](glosario/README.md)** donde explicamos cada término (qué es, para qué sirve y un ejemplo) de forma súper sencilla.
 
 ##  ¿Por qué existe Nerve?
 [alenia-nerve](https://github.com/Kaia-Alenia/alenia-nerve) es un sistema de comunicación entre procesos (IPC) local, multiplataforma y offline-first, que te permite conectar diferentes scripts (incluso en diferentes lenguajes) de forma súper sencilla usando sockets locales (Unix Sockets en Linux/macOS, TCP en Windows).
