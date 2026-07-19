@@ -90,11 +90,16 @@ Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financia
 ## 💬 Únete a la comunidad
 (https://discord.gg/xFptGAr7t)
 
-##  Contribuidores
+## Cumpliendo Retos
 ¡Gracias a todas las personas que hacen esto posible! Cada contribución cuenta.
 
 - [Tacos-1212](https://github.com/Tacos-1212)
 - [Vi-dot1](https://github.com/Vi-dot1)
+- [CesarAAR](https://github.com/CesarAAR)
+- [isaacglezacosta-python](https://github.com/isaacglezacosta-python)
+
+## Creando Retos
+- [Alejandro (Alenia Studios)](https://github.com/Alenia-Studios)
 
 ## 📄 Licencia
 Este repositorio, al igual que Nerve, está licenciado bajo **GNU GPL v3**. Lee el archivo `LICENSE` para más detalles.
