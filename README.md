@@ -100,7 +100,8 @@ Las donaciones vía Ko-fi / GitHub Sponsors se usan exclusivamente para financia
 - [Tacos-1212](https://github.com/Tacos-1212)
 - [Vi-dot1](https://github.com/Vi-dot1)
 - [CesarAAR](https://github.com/CesarAAR)
-- [isaacglezacosta-python](https://github.com/isaacglezacosta-python)
+- [isaacglezacosta](https://github.com/isaacglezacosta)
+- [downstairs777](https://github.com/downstairs777)
 
 ## Creando Retos
 - [Alejandro (Alenia Studios)](https://github.com/Alenia-Studios)
