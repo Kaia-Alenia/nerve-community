@@ -13,8 +13,8 @@ def calcular_imc(peso: float, altura: float) -> float:
     """
     Calcula el índice de masa corporal.
     Fórmula: IMC = peso (kg) / altura^2 (m)
-    """ 
-    return peso / altura ** 2
+    """
+    return peso / altura**2
 
 
 def categorizar_imc(imc: float) -> str:
