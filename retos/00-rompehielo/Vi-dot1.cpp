@@ -1,7 +1,7 @@
 #include<iostream>
 
 // para compilar y ejecutar en linux: g++ Vi-dot1.cpp -o out; ./out
-// para compilar y ejecutar en Windows (MinGW): g++ Vi-dot1.cpp -o out.exe & .\out.exe
+// para compilar y ejecutar en Windows (MinGW): g++ Vi-dot1.cpp -o out.exe && .\out.exe
 int main() {
     std::cout << "Hellou, soy Vi-dot1" << std::endl;
     std::cout << "llevo tiempo programando por hobby y aprendiendo por mi cuenta, ahorita estoy haciendo carrera como tal" << std::endl;
