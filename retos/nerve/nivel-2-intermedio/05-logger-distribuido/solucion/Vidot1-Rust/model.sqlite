@@ -1,0 +1,19 @@
+-- En caso de querer crear la basede datos desde 0
+-- necesitas tener sqlite instalado en tu maquina
+
+-- Depues de eso en terminal ejecuta:
+-- >> sqlite3 logs.db
+-- >> sqlite3> .read model .sqlite
+--
+-- Deberia aparecer un una nueva db como lo logs.db
+-- Puedes comprobar que la tabla exista con
+-- 
+-- >> sqlite3> select name from sqlite_master where type='table';
+--
+CREATE TABLE IF NOT EXISTS logs (
+    id INTEGER PRIMARY KEY,
+    timestamp TEXT,
+    nivel TEXT,
+    origen TEXT,
+    mensaje TEXT
+);
