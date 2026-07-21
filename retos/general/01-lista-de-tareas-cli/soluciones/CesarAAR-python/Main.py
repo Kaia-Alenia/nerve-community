@@ -1,10 +1,10 @@
 from Model import Tareas
 import pandas as pd
-from Functions import validar_ruta_csv, validar_contenido_csv
+from Functions import validar_ruta_csv, validar_contenido_csv, obtener_ruta_absoluta
 
 df = pd.DataFrame(columns=["id", "titulo", "description", "estado"])
 
-id_task = 0
+id_task = 1
 
 ruta_csv = ""
 
@@ -12,6 +12,7 @@ ruta_csv = ""
 def option1():  # Insertar Tarea
     try:
         global id_task
+        global df
         titulo_tarea = input("Ingrese el titulo de la tarea: ")
         description_tarea = input("Descripción de la tarea: ")
         estado_tarea = False
@@ -22,7 +23,13 @@ def option1():  # Insertar Tarea
             estado=estado_tarea,
         )
         id_task += 1
-        df.loc[len(df)] = [tarea.id, tarea.titulo, tarea.description, tarea.estado]
+        nueva_fila = pd.DataFrame([{
+            "id": tarea.id,
+            "titulo": tarea.titulo,
+            "description": tarea.description,
+            "estado": tarea.estado,
+        }])
+        df = pd.concat([df, nueva_fila], ignore_index=True)
         print(f"Tarea creada: {tarea}\n")
     except Exception as e:
         print(f"Error al crear tarea: {e}")
@@ -110,7 +117,11 @@ def option5():  # Ver tarea especifica
 
 
 def option6():  # ver lista de tareas
-    print(df)
+    if df.empty:
+        print("No hay tareas registradas.")
+    else:
+        print(df.to_string(index=False))
+
 
 
 def option7():
@@ -121,15 +132,15 @@ def option7():
     if df.empty:
         ruta = input("Ingrese la ruta del archivo CSV: ")
         try:
-            if validar_ruta_csv(ruta):
-                if validar_contenido_csv(ruta):
-                    ruta_csv = ruta
-                    df_csv = pd.read_csv(ruta)
-                    df = pd.concat([df, df_csv], ignore_index=True)
-                    df["id"] = df["id"].astype(int)
-                    df["estado"] = df["estado"].astype(bool)
-                    id_task = df["id"].max() + 1
-                    print(df)
+            ruta_limpia = validar_ruta_csv(ruta)
+            if validar_contenido_csv(ruta_limpia):
+                ruta_csv = ruta_limpia
+                df_csv = pd.read_csv(ruta_limpia)
+                df = pd.concat([df, df_csv], ignore_index=True)
+                df["id"] = df["id"].astype(int)
+                df["estado"] = df["estado"].astype(bool)
+                id_task = df["id"].max() + 1
+                print(df.to_string(index=False))
         except Exception as e:
             print(f"Error durante el proceso de CSV:\n{e}")
     else:
@@ -150,31 +161,21 @@ def option7():
                 print("Fusionando registros existentes con los del CSV...")
                 ruta = input("Ingrese la ruta del archivo CSV: ")
                 try:
-                    if validar_ruta_csv(ruta):
-                        if validar_contenido_csv(ruta):
-                            ruta_csv = ruta
-                            df_csv = pd.read_csv(ruta)
-                            ultimo_id_df = df["id"].max()
-                            primer_id_csv = df_csv["id"].min()
-                            df_csv["id"] = (
-                                df_csv["id"] - primer_id_csv + (ultimo_id_df + 1)
-                            )
-                            """
-                            Ejemplo del ajuste de IDs:
-                            ultimo id del dataframe = 21
-                            primer id del csv = 0
-
-                            id= 0 ; 0 - 0 + 21 + 1 = 22
-                            id= 1 ; 1 - 0 + 21 + 1 = 23
-                            ...
-                            id= x; x - 0 + Y + 1 = Z
-                            """
-                            df = pd.concat([df, df_csv], ignore_index=True)
-                            df["id"] = df["id"].astype(int)
-                            df["estado"] = df["estado"].astype(bool)
-                            id_task = df["id"].max() + 1
-                            print(df)
-                            break
+                    ruta_limpia = validar_ruta_csv(ruta)
+                    if validar_contenido_csv(ruta_limpia):
+                        ruta_csv = ruta_limpia
+                        df_csv = pd.read_csv(ruta_limpia)
+                        ultimo_id_df = df["id"].max()
+                        primer_id_csv = df_csv["id"].min()
+                        df_csv["id"] = (
+                            df_csv["id"] - primer_id_csv + (ultimo_id_df + 1)
+                        )
+                        df = pd.concat([df, df_csv], ignore_index=True)
+                        df["id"] = df["id"].astype(int)
+                        df["estado"] = df["estado"].astype(bool)
+                        id_task = df["id"].max() + 1
+                        print(df.to_string(index=False))
+                        break
                 except Exception as e:
                     print(f"Error durante el proceso de CSV:\n{e}")
                 break
@@ -183,19 +184,19 @@ def option7():
                     "Eliminando registros existentes y reemplazando con los del CSV..."
                 )
                 df = df.iloc[0:0]
-                id_task = 0
+                id_task = 1
                 ruta = input("Ingrese la ruta del archivo CSV: ")
                 try:
-                    if validar_ruta_csv(ruta):
-                        if validar_contenido_csv(ruta):
-                            ruta_csv = ruta
-                            df_csv = pd.read_csv(ruta)
-                            df = pd.concat([df, df_csv], ignore_index=True)
-                            df["id"] = df["id"].astype(int)
-                            df["estado"] = df["estado"].astype(bool)
-                            id_task = df["id"].max() + 1
-                            print(df)
-                            break
+                    ruta_limpia = validar_ruta_csv(ruta)
+                    if validar_contenido_csv(ruta_limpia):
+                        ruta_csv = ruta_limpia
+                        df_csv = pd.read_csv(ruta_limpia)
+                        df = pd.concat([df, df_csv], ignore_index=True)
+                        df["id"] = df["id"].astype(int)
+                        df["estado"] = df["estado"].astype(bool)
+                        id_task = df["id"].max() + 1
+                        print(df.to_string(index=False))
+                        break
                 except Exception as e:
                     print(f"Error durante el proceso de CSV:\n{e}")
             else:
@@ -205,13 +206,35 @@ def option7():
 def option8():
     global df
     global ruta_csv
-    print("Exportando información a archivo CSV...")
+
+    if df.empty:
+        print("No hay datos para exportar. ¡Hasta luego!")
+        return
+
+    destino = ruta_csv
+
+    if ruta_csv:
+        print(f"Ruta actual configurada: {ruta_csv}")
+        print("1. Sobrescribir en el archivo importado")
+        print("2. Exportar a un nuevo archivo CSV")
+        opc = input("Seleccione una opción (1 o 2, por defecto 1): ").strip()
+        if opc == "2":
+            destino = input("Ingrese la nueva ruta o nombre del archivo CSV: ").strip("'\"")
+    else:
+        destino = input("Ingrese el nombre o ruta del archivo CSV para exportar (ej: tareas.csv): ").strip("'\"")
+
+    if not destino:
+        destino = "tareas.csv"
+
+    path_destino = obtener_ruta_absoluta(destino)
+
+    print(f"Exportando información a archivo CSV: {path_destino}...")
     try:
-        df.to_csv(ruta_csv, index=False)
-        print(f"Información exportada correctamente: {ruta_csv}")
+        df.to_csv(path_destino, index=False, encoding="utf-8")
+        print(f"Información exportada correctamente en: {path_destino}")
         print("Bye Bye!")
     except Exception as e:
-        return f"Error al exportar a CSV: {e}"
+        print(f"Error al exportar a CSV: {e}")
 
 
 def menu():
