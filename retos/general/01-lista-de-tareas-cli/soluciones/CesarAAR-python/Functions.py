@@ -1,7 +1,6 @@
 import pandas as pd
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).parent.resolve()
 
 
@@ -32,4 +31,3 @@ def validar_contenido_csv(ruta: str) -> bool:
     raise ValueError(
         f"El archivo CSV no contiene la estructura requerida: {required_columns}"
     )
-    

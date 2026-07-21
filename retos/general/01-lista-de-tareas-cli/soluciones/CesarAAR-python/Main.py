@@ -23,12 +23,16 @@ def option1():  # Insertar Tarea
             estado=estado_tarea,
         )
         id_task += 1
-        nueva_fila = pd.DataFrame([{
-            "id": tarea.id,
-            "titulo": tarea.titulo,
-            "description": tarea.description,
-            "estado": tarea.estado,
-        }])
+        nueva_fila = pd.DataFrame(
+            [
+                {
+                    "id": tarea.id,
+                    "titulo": tarea.titulo,
+                    "description": tarea.description,
+                    "estado": tarea.estado,
+                }
+            ]
+        )
         df = pd.concat([df, nueva_fila], ignore_index=True)
         print(f"Tarea creada: {tarea}\n")
     except Exception as e:
@@ -123,7 +127,6 @@ def option6():  # ver lista de tareas
         print(df.to_string(index=False))
 
 
-
 def option7():
     global id_task
     global df
@@ -167,9 +170,7 @@ def option7():
                         df_csv = pd.read_csv(ruta_limpia)
                         ultimo_id_df = df["id"].max()
                         primer_id_csv = df_csv["id"].min()
-                        df_csv["id"] = (
-                            df_csv["id"] - primer_id_csv + (ultimo_id_df + 1)
-                        )
+                        df_csv["id"] = df_csv["id"] - primer_id_csv + (ultimo_id_df + 1)
                         df = pd.concat([df, df_csv], ignore_index=True)
                         df["id"] = df["id"].astype(int)
                         df["estado"] = df["estado"].astype(bool)
@@ -219,9 +220,13 @@ def option8():
         print("2. Exportar a un nuevo archivo CSV")
         opc = input("Seleccione una opción (1 o 2, por defecto 1): ").strip()
         if opc == "2":
-            destino = input("Ingrese la nueva ruta o nombre del archivo CSV: ").strip("'\"")
+            destino = input("Ingrese la nueva ruta o nombre del archivo CSV: ").strip(
+                "'\""
+            )
     else:
-        destino = input("Ingrese el nombre o ruta del archivo CSV para exportar (ej: tareas.csv): ").strip("'\"")
+        destino = input(
+            "Ingrese el nombre o ruta del archivo CSV para exportar (ej: tareas.csv): "
+        ).strip("'\"")
 
     if not destino:
         destino = "tareas.csv"
