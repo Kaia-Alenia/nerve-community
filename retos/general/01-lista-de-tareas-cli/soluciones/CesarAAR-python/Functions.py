@@ -1,30 +1,33 @@
 import pandas as pd
 from pathlib import Path
 
-
-def validar_ruta_csv(ruta):
-    try:
-        clean_path = ruta.strip("'\"")
-        path = Path(clean_path)
-
-        if path.is_file():
-            return True
-        else:
-            raise FileNotFoundError(f"Archivo no encontrado en la ruta: {path}")
-    except Exception as e:
-        raise e
+BASE_DIR = Path(__file__).parent.resolve()
 
 
-def validar_contenido_csv(ruta):
-    try:
-        df = pd.read_csv(ruta)
-        required_columns = ["id", "titulo", "description", "estado"]
+def obtener_ruta_absoluta(ruta: str) -> Path:
+    clean_path = ruta.strip("'\"")
+    path = Path(clean_path)
+    if not path.is_absolute():
+        path = BASE_DIR / path
+    return path
 
-        if all(column in df.columns for column in required_columns):
-            return True
-        else:
-            raise ValueError(
-                f"El archivo CSV no contiene la estructura requerida: {required_columns}"
-            )
-    except Exception as e:
-        raise e
+
+def validar_ruta_csv(ruta: str) -> str:
+    path = obtener_ruta_absoluta(ruta)
+
+    if path.is_file():
+        return str(path)
+    raise FileNotFoundError(f"Archivo no encontrado en la ruta: {path}")
+
+
+def validar_contenido_csv(ruta: str) -> bool:
+    # 2.- Leer la ruta ya limpia para validar su estructura
+    df = pd.read_csv(ruta, encoding="utf-8")
+    required_columns = ["id", "titulo", "description", "estado"]
+
+    if all(column in df.columns for column in required_columns):
+        return True
+
+    raise ValueError(
+        f"El archivo CSV no contiene la estructura requerida: {required_columns}"
+    )
