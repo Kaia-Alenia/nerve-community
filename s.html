@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice Maestro: 100 Pasos a la Maestría</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #F8FAFC;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            height: 400px;
+        }
+
+        .level-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .module-card {
+            background: rgba(15, 23, 42, 0.4);
+            border-left: 4px solid #334155;
+            transition: all 0.3s ease;
+        }
+
+        .module-card:hover {
+            background: rgba(15, 23, 42, 0.8);
+            transform: translateX(5px);
+        }
+
+        .step-item {
+            font-size: 0.75rem;
+            padding: 0.25rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            color: #94A3B8;
+        }
+
+        .step-item:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            font-weight: 800;
+            margin-right: 0.5rem;
+            opacity: 0.5;
+        }
+
+        /* Module Colors */
+        .m1-border {
+            border-color: #F43F5E;
+        }
+
+        .m2-border {
+            border-color: #F43F5E;
+        }
+
+        .m3-border {
+            border-color: #FB923C;
+        }
+
+        .m4-border {
+            border-color: #FB923C;
+        }
+
+        .m5-border {
+            border-color: #38BDF8;
+        }
+
+        .m6-border {
+            border-color: #38BDF8;
+        }
+
+        .m7-border {
+            border-color: #818CF8;
+        }
+
+        .m8-border {
+            border-color: #818CF8;
+        }
+
+        .m9-border {
+            border-color: #F8FAFC;
+        }
+
+        .m10-border {
+            border-color: #F43F5E;
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-12">
+
+    <!-- Plan de Narrativa
+         1. Introducción: El despliegue total de los 100 niveles.
+         2. Visualización: Gráfico de radar sobre las habilidades que desarrolla cada fase.
+         3. El Índice: Listado detallado de los 100 pasos divididos en 10 módulos.
+         4. Conclusión: La meta final - El Piloto de Nerve.
+    -->
+
+    <header class="max-w-6xl mx-auto text-center mb-20">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">El Manifiesto de los <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-400 to-blue-400">100
+                Niveles</span></h1>
+        <p class="text-slate-400 text-lg max-w-3xl mx-auto">
+            Hemos fragmentado el universo de Python en 100 átomos de conocimiento. Cada nivel es una victoria; cada
+            módulo es una nueva capacidad profesional.
+        </p>
+    </header>
+
+    <div class="max-w-7xl mx-auto mb-20 bg-slate-900/20 p-8 rounded-[2rem] border border-white/5">
+        <h3 class="text-center text-xl font-bold mb-8 text-blue-400">Balance de Habilidades (Al completar los 100
+            niveles)</h3>
+        <div class="chart-container">
+            <canvas id="skillRadar"></canvas>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto">
+        <div class="level-grid">
+
+            <!-- M1 -->
+            <div class="module-card p-6 rounded-xl m1-border">
+                <h4 class="text-pink-500 font-extrabold mb-4 uppercase tracking-tighter">01. Fundamentos Alpha</h4>
+                <div class="space-y-1">
+                    <div class="step-item"><span class="step-number">01</span>Hola Mundo y Sintaxis</div>
+                    <div class="step-item"><span class="step-number">02</span>Cajas de Memoria (Vars)</div>
+                    <div class="step-item"><span class="step-number">03</span>Tipos: Texto y Enteros</div>
+                    <div class="step-item"><span class="step-number">04</span>Tipos: Flotantes y Bool</div>
+                    <div class="step-item"><span class="step-number">05</span>Aritmética de Máquina</div>
+                    <div class="step-item"><span class="step-number">06</span>Entrada del Usuario (Input)</div>
+                    <div class="step-item"><span class="step-number">07</span>F-Strings y Formateo</div>
+                    <div class="step-item"><span class="step-number">08</span>Comentarios y Clean Doc</div>
+                    <div class="step-item"><span class="step-number">09</span>Errores de Sintaxis Básico</div>
+                    <div class="step-item"><span class="step-number">10</span>Reto: Ficha de Personaje</div>
+                </div>
+            </div>
+
+            <!-- M2 -->
+            <div class="module-card p-6 rounded-xl m2-border">
+                <h4 class="text-pink-500 font-extrabold mb-4 uppercase tracking-tighter">02. Control de Flujo</h4>
+                <div class="space-y-1">
+                    <div class="step-item"><span class="step-number">11</span>Operadores Lógicos (AND/OR)</div>
+                    <div class="step-item"><span class="step-number">12</span>Comparadores (>, <,==)</div>
+                            <div class="step-item"><span class="step-number">13</span>El Camino del IF</div>
+                            <div class="step-item"><span class="step-number">14</span>Alternativas con ELSE/ELIF</div>
+                            <div class="step-item"><span class="step-number">15</span>Lógica Anidada (Inception)</div>
+                            <div class="step-item"><span class="step-number">16</span>Manejo de Truthy/Falsy</div>
+                            <div class="step-item"><span class="step-number">17</span>Match Case (Python 3.10+)</div>
+                            <div class="step-item"><span class="step-number">18</span>Depuración de Flujo</div>
+                            <div class="step-item"><span class="step-number">19</span>Optimización de Booleans</div>
+                            <div class="step-item"><span class="step-number">20</span>Reto: El Portero Virtual</div>
+                    </div>
+                </div>
+
+                <!-- M3 -->
+                <div class="module-card p-6 rounded-xl m3-border">
+                    <h4 class="text-orange-400 font-extrabold mb-4 uppercase tracking-tighter">03. Estructuras de Datos
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">21</span>Listas: El Almacén Simple</div>
+                        <div class="step-item"><span class="step-number">22</span>Métodos de Lista (CRUD)</div>
+                        <div class="step-item"><span class="step-number">23</span>Slicing (Rebanar Datos)</div>
+                        <div class="step-item"><span class="step-number">24</span>Tuplas: Datos Inmutables</div>
+                        <div class="step-item"><span class="step-number">25</span>Diccionarios (Clave:Valor)</div>
+                        <div class="step-item"><span class="step-number">26</span>Sets: Conjuntos Únicos</div>
+                        <div class="step-item"><span class="step-number">27</span>Estructuras Anidadas</div>
+                        <div class="step-item"><span class="step-number">28</span>Mutabilidad vs Referencia</div>
+                        <div class="step-item"><span class="step-number">29</span>Copiado Profundo (DeepCopy)</div>
+                        <div class="step-item"><span class="step-number">30</span>Reto: Inventario RPG</div>
+                    </div>
+                </div>
+
+                <!-- M4 -->
+                <div class="module-card p-6 rounded-xl m4-border">
+                    <h4 class="text-orange-400 font-extrabold mb-4 uppercase tracking-tighter">04. Bucles y Repetición
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">31</span>While: El Bucle Infinito</div>
+                        <div class="step-item"><span class="step-number">32</span>For: Iterando el Mundo</div>
+                        <div class="step-item"><span class="step-number">33</span>Range y Enumerate</div>
+                        <div class="step-item"><span class="step-number">34</span>Break y Continue</div>
+                        <div class="step-item"><span class="step-number">35</span>List Comprehension (Pro)</div>
+                        <div class="step-item"><span class="step-number">36</span>Dict Comprehension</div>
+                        <div class="step-item"><span class="step-number">37</span>Zip: Uniendo Colecciones</div>
+                        <div class="step-item"><span class="step-number">38</span>Iteradores y Generadores</div>
+                        <div class="step-item"><span class="step-number">39</span>Búcles Anidados (Matrices)</div>
+                        <div class="step-item"><span class="step-number">40</span>Reto: Analizador de Datos</div>
+                    </div>
+                </div>
+
+                <!-- M5 -->
+                <div class="module-card p-6 rounded-xl m5-border">
+                    <h4 class="text-blue-400 font-extrabold mb-4 uppercase tracking-tighter">05. Funciones y Módulos
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">41</span>Def: Creando Verbos</div>
+                        <div class="step-item"><span class="step-number">42</span>Parámetros y Retornos</div>
+                        <div class="step-item"><span class="step-number">43</span>Argumentos por Defecto</div>
+                        <div class="step-item"><span class="step-number">44</span>*args y **kwargs</div>
+                        <div class="step-item"><span class="step-number">45</span>Scope: Global vs Local</div>
+                        <div class="step-item"><span class="step-number">46</span>Lambdas (Anónimas)</div>
+                        <div class="step-item"><span class="step-number">47</span>Recursividad (Espejos)</div>
+                        <div class="step-item"><span class="step-number">48</span>Importación de Librerías</div>
+                        <div class="step-item"><span class="step-number">49</span>PIP y Entornos Virtuales</div>
+                        <div class="step-item"><span class="step-number">50</span>Reto: Calculadora Modular</div>
+                    </div>
+                </div>
+
+                <!-- M6 -->
+                <div class="module-card p-6 rounded-xl m6-border">
+                    <h4 class="text-blue-400 font-extrabold mb-4 uppercase tracking-tighter">06. Automatización OS</h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">51</span>Módulo OS y Rutas</div>
+                        <div class="step-item"><span class="step-number">52</span>Lectura de Archivos TXT</div>
+                        <div class="step-item"><span class="step-number">53</span>Escritura y Modos (w, a)</div>
+                        <div class="step-item"><span class="step-number">54</span>Manejo de CSVs</div>
+                        <div class="step-item"><span class="step-number">55</span>Shutil: Mover y Copiar</div>
+                        <div class="step-item"><span class="step-number">56</span>Datetime y Cronos</div>
+                        <div class="step-item"><span class="step-number">57</span>Subprocess: Comandos Pro</div>
+                        <div class="step-item"><span class="step-number">58</span>Logging (Caja Negra)</div>
+                        <div class="step-item"><span class="step-number">59</span>Try / Except / Finally</div>
+                        <div class="step-item"><span class="step-number">60</span>Reto: Organizador de Archivos</div>
+                    </div>
+                </div>
+
+                <!-- M7 -->
+                <div class="module-card p-6 rounded-xl m7-border">
+                    <h4 class="text-purple-500 font-extrabold mb-4 uppercase tracking-tighter">07. Web Scraping & APIs
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">61</span>Protocolo HTTP (Requests)</div>
+                        <div class="step-item"><span class="step-number">62</span>Parseo de JSON Dinámico</div>
+                        <div class="step-item"><span class="step-number">63</span>BeautifulSoup: HTML Básico</div>
+                        <div class="step-item"><span class="step-number">64</span>Selectores CSS y XPATH</div>
+                        <div class="step-item"><span class="step-number">65</span>Selenium: Web Dinámica</div>
+                        <div class="step-item"><span class="step-number">66</span>Autenticación en APIs</div>
+                        <div class="step-item"><span class="step-number">67</span>Rate Limiting y Proxies</div>
+                        <div class="step-item"><span class="step-number">68</span>Headless Browsing</div>
+                        <div class="step-item"><span class="step-number">69</span>Pandas para Web Data</div>
+                        <div class="step-item"><span class="step-number">70</span>Reto: Monitor de Precios</div>
+                    </div>
+                </div>
+
+                <!-- M8 -->
+                <div class="module-card p-6 rounded-xl m8-border">
+                    <h4 class="text-purple-500 font-extrabold mb-4 uppercase tracking-tighter">08. POO Avanzada</h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">71</span>Clases y Objetos (Blueprints)</div>
+                        <div class="step-item"><span class="step-number">72</span>El Constructor __init__</div>
+                        <div class="step-item"><span class="step-number">73</span>Herencia y Polimorfismo</div>
+                        <div class="step-item"><span class="step-number">74</span>Encapsulamiento (Privados)</div>
+                        <div class="step-item"><span class="step-number">75</span>Propiedades y Decoradores</div>
+                        <div class="step-item"><span class="step-number">76</span>Métodos de Clase y Estáticos</div>
+                        <div class="step-item"><span class="step-number">77</span>Dunder Methods (__str__, __len__)
+                        </div>
+                        <div class="step-item"><span class="step-number">78</span>Abstracción (ABC)</div>
+                        <div class="step-item"><span class="step-number">79</span>Patrones de Diseño: Singleton</div>
+                        <div class="step-item"><span class="step-number">80</span>Reto: Simulador de Ecosistema</div>
+                    </div>
+                </div>
+
+                <!-- M9 -->
+                <div class="module-card p-6 rounded-xl m9-border">
+                    <h4 class="text-slate-100 font-extrabold mb-4 uppercase tracking-tighter">09. Ciencia de Datos e IA
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">81</span>NumPy: Álgebra de Máquina</div>
+                        <div class="step-item"><span class="step-number">82</span>Pandas: Dataframes Pro</div>
+                        <div class="step-item"><span class="step-number">83</span>Limpieza de Datos (Outliers)</div>
+                        <div class="step-item"><span class="step-number">84</span>Matplotlib y Visualización</div>
+                        <div class="step-item"><span class="step-number">85</span>Intro a Scikit-Learn</div>
+                        <div class="step-item"><span class="step-number">86</span>Regresión Lineal Real</div>
+                        <div class="step-item"><span class="step-number">87</span>Clasificación de Imágenes</div>
+                        <div class="step-item"><span class="step-number">88</span>NLP: Procesando Lenguaje</div>
+                        <div class="step-item"><span class="step-number">89</span>LLMs: Usando OpenAI/Groot</div>
+                        <div class="step-item"><span class="step-number">90</span>Reto: Predictor de Bolsa</div>
+                    </div>
+                </div>
+
+                <!-- M10 -->
+                <div class="module-card p-6 rounded-xl m10-border">
+                    <h4 class="text-pink-500 font-extrabold mb-4 uppercase tracking-tighter italic">10. Nerve Master
+                    </h4>
+                    <div class="space-y-1">
+                        <div class="step-item"><span class="step-number">91</span>Local-First: El Cambio</div>
+                        <div class="step-item"><span class="step-number">92</span>Arquitectura de Nodos</div>
+                        <div class="step-item"><span class="step-number">93</span>Comunicación P2P</div>
+                        <div class="step-item"><span class="step-number">94</span>Manejo de Estado Global</div>
+                        <div class="step-item"><span class="step-number">95</span>Criptografía en Python</div>
+                        <div class="step-item"><span class="step-number">96</span>Sincronización de Datos</div>
+                        <div class="step-item"><span class="step-number">97</span>Microservicios con Nerve</div>
+                        <div class="step-item"><span class="step-number">98</span>Despliegue Distribuido</div>
+                        <div class="step-item"><span class="step-number">99</span>Optimización de Recursos</div>
+                        <div class="step-item"><span class="step-number">100</span>PROYECTO FINAL: PILOT</div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+
+    <footer class="mt-24 text-center py-12 border-t border-slate-900">
+        <p class="text-slate-500 text-xs tracking-widest uppercase">© 2026 Nerve Community - Plan Maestro de Ingeniería
+        </p>
+    </footer>
+
+    <script>
+        const tooltipConfig = {
+            callbacks: {
+                title: function (tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('skillRadar').getContext('2d'), {
+            type: 'radar',
+            data: {
+                labels: [['Lógica', 'Pura'], ['Automatización', 'OS'], ['Web', '& APIs'], ['Arquitectura', 'POO'], ['IA', '& Data'], ['Nerve', 'Distribuido']],
+                datasets: [{
+                    label: 'Perfil del Graduado Nerve',
+                    data: [100, 95, 90, 85, 95, 100],
+                    backgroundColor: 'rgba(244, 63, 94, 0.2)',
+                    borderColor: '#F43F5E',
+                    pointBackgroundColor: '#F43F5E',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(255,255,255,0.1)' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        pointLabels: { color: '#94A3B8', font: { size: 10, weight: 'bold' } },
+                        ticks: { display: false, max: 100 }
+                    }
+                },
+                plugins: { legend: { display: false }, tooltip: tooltipConfig }
+            }
+        });
+    </script>
+    <!-- Explicit confirmation: NEITHER Mermaid JS NOR SVG were used in this output. -->
+</body>
+
+</html>
